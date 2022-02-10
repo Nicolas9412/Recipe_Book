@@ -1,0 +1,40 @@
+$rosa-fuerte: #FF5C8D; 
+$rosa-claro: #FFC0D3;
+$gris-oscuro: #524A4E;
+
+header{
+    background-color: $rosa-fuerte;
+    .header__search{
+            .btn{
+                background-color: $rosa-claro;
+                color: $gris-oscuro;
+                border-color: $gris-oscuro;
+            }
+    }
+    .navbar{
+        background-color: $rosa-claro !important;
+        div{
+            ul{
+                li{
+                    background-color: transparent;
+                    transition: all 1s;
+                    a{
+                        color: #524A4E !important;
+                    }  
+                }
+                li:hover{
+                    background-color: $rosa-fuerte;
+                }
+                .grid-menu-dropdown{ 
+                    li{
+                        transition: all 1s;
+                    }
+                    li:hover{
+                        background-color: rgba(255, 92, 141, 0.2);
+                    }
+                 }
+            }
+        }
+    }
+    
+}

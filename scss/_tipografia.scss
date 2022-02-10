@@ -1,0 +1,28 @@
+$titulo-logo: 2em;
+$item-menu: 1.2em;
+
+header{
+    .header__logo{
+        h1{
+            font-size: $titulo-logo;
+        }
+    }
+    .navbar{
+        font-size: $item-menu;
+        div{
+            ul{
+                li{
+                    a{
+                        font-size: $item-menu;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                ul{
+                    li{
+                        font-size: 1em;
+                    }
+                }
+                }
+            }
+        }
+    }
+}

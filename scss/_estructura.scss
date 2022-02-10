@@ -1,0 +1,88 @@
+.grid-index-body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: auto auto auto;
+    .grid-index-header{
+        grid-area: header;
+        width: 100vw;
+        .header__logo{
+            display: inline-flex;
+            width: 25%;
+            .header__logo__container{
+                min-width: 60px;
+                width: 15%;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+            .header__logo__titulo{
+                min-width: 300px;
+            }
+        }
+        .header__search{
+            width: 74%;
+            display: inline-flex;
+            justify-content: end;
+            input{
+                width: 25%;
+                min-width: 200px;
+            }
+            input:nth-child(2){
+                display: none;
+            }
+            .btn{
+                border-radius: 50%;
+            }
+        }
+        .navbar{
+            div{
+                ul{
+                    li{
+                        width: fit-content;
+                        margin-left: 2em;
+                        border-radius: 5px;
+                        text-align: center;
+                        .dropdown-menu{
+                            width: 400%;
+                            .grid-menu-dropdown{
+                            width: 100%; 
+                            display: grid;
+                            grid-template-columns: 42.5% 42.5%;
+                            grid-column-gap: 5%;
+                            grid-row-gap: 10px; 
+                                li{
+                                    padding: 0 5px;
+                                    line-height: 50px;
+                                    margin-left: 35px;
+                                    text-align: start;
+                                    width: 100% !important;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    a{
+                                        text-decoration: none;
+                                    }
+                                    div{
+                                        width: fit-content;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .grid-index-main{
+        grid-area: main;
+    }
+    .grid-index-aside{
+        grid-area: aside;
+    }
+    .grid-index-footer{
+        grid-area: footer;
+    }
+}
