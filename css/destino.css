@@ -209,7 +209,7 @@ input[type="checkbox"], input[type="radio"] {
       .grid-index-body .grid-index-header .header__logo .header__logo__titulo {
         min-width: 300px; }
     .grid-index-body .grid-index-header .header__search {
-      width: 74%;
+      width: 72%;
       display: inline-flex;
       justify-content: end; }
       .grid-index-body .grid-index-header .header__search input {
@@ -297,10 +297,13 @@ input[type="checkbox"], input[type="radio"] {
     margin-top: 3vh;
     padding: 1em;
     justify-content: center; }
+    .grid-index-body main .newsletter h2 {
+      line-height: 1em; }
     .grid-index-body main .newsletter .btn {
       margin-left: 2em;
-      padding-left: 1em;
-      padding-right: 1em; }
+      padding: 0;
+      padding-left: 2em;
+      padding-right: 2em; }
   .grid-index-body .grid-index-footer {
     grid-area: footer; }
   .grid-index-body footer {
@@ -348,20 +351,22 @@ main .grid-lista-recetas .card .card-body .card-title {
 main .grid-lista-recetas .card .card-body .btn {
   background-color: #FFC0D3;
   border: #FF5C8D solid 1px;
-  color: #524A4E; }
+  color: #524A4E;
+  transition: all 1s; }
+
+main .grid-lista-recetas .card .card-body .btn:hover {
+  background-color: rgba(255, 192, 211, 0.5); }
 
 main .newsletter {
-  background-color: #B8405E;
-  /*
-        background-image: url(../imagenes/fondo_cocina_2.png) ;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/ }
+  background-color: #B8405E; }
   main .newsletter h2 {
     color: #FFF; }
   main .newsletter .btn {
     background-color: #FFC0D3;
-    color: #524A4E; }
+    color: #524A4E;
+    transition: all 1s; }
+  main .newsletter .btn:hover {
+    background-color: rgba(255, 192, 211, 0.7); }
 
 footer p {
   color: #524A4E; }
@@ -401,7 +406,8 @@ main .newsletter h2 {
   font-size: 1.5em; }
 
 main .newsletter .btn {
-  font-size: 1em; }
+  font-weight: 600;
+  font-size: 1.5em; }
 
 footer p {
   font-size: 1.3em; }
@@ -434,7 +440,11 @@ footer p {
     main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
       width: 90% !important; }
   main .newsletter h2 {
-    font-size: 1em !important; } }
+    font-size: 1em !important; }
+  main .newsletter .btn {
+    margin-right: 1em;
+    padding-left: 1em !important;
+    padding-right: 1em !important; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
   header .navbar {

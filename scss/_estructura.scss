@@ -24,7 +24,7 @@
             }
         }
         .header__search{
-            width: 74%;
+            width: 72%;
             display: inline-flex;
             justify-content: end;
             input{
@@ -151,10 +151,14 @@
             margin-top: 3vh;
             padding: 1em;
             justify-content: center;
+            h2{
+                line-height: 1em;
+            }
             .btn{
                 margin-left: 2em;
-                padding-left: 1em;
-                padding-right: 1em;
+                padding: 0;
+                padding-left: 2em;
+                padding-right: 2em;
             }
         }
     }

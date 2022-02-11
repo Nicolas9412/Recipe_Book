@@ -71,6 +71,10 @@ main{
                     background-color: $rosa-claro;
                     border: $rosa-fuerte solid 1px;
                     color: $gris-oscuro;
+                    transition: all 1s;
+                }
+                .btn:hover{
+                    background-color: rgba(255, 192, 211, 0.5);
                 }
             }
         }
@@ -78,17 +82,16 @@ main{
 
     .newsletter{
         background-color: $bordo;
-        /*
-        background-image: url(../imagenes/fondo_cocina_2.png) ;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/
         h2{
             color: #FFF;
         }
         .btn{
             background-color: $rosa-claro;
             color: $gris-oscuro;
+            transition: all 1s;
+        }
+        .btn:hover{
+            background-color: rgba(255, 192, 211, 0.7);
         }
     }
 }
