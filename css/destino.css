@@ -191,9 +191,10 @@ input[type="checkbox"], input[type="radio"] {
 
 .grid-index-body {
   display: grid;
-  grid-template-areas: "header header" "main aside" "footer footer";
-  grid-template-columns: 70vw 30vw;
-  grid-template-rows: auto auto auto; }
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100vw;
+  grid-template-rows: auto auto auto;
+  overflow-x: hidden; }
   .grid-index-body .grid-index-header {
     grid-area: header;
     width: 100vw; }
@@ -245,10 +246,71 @@ input[type="checkbox"], input[type="radio"] {
               width: fit-content; }
   .grid-index-body .grid-index-main {
     grid-area: main; }
-  .grid-index-body .grid-index-aside {
-    grid-area: aside; }
+  .grid-index-body main .fondo_receta_destacada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../imagenes/fondo_cocina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .grid-index-body main .fondo_receta_destacada .card_receta_destacada {
+      display: grid;
+      grid-template-columns: 45% 50%;
+      grid-template-rows: auto;
+      grid-column-gap: 5%;
+      width: 70%;
+      height: 90%;
+      margin: 30px 0; }
+      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-decoration: none; }
+      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
+        margin-left: 30px; }
+        .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
+          text-decoration: none; }
+      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card p {
+        width: 100%;
+        margin-left: 30px; }
+      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+        text-align: justify; }
+      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .grid-index-body main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
+          width: 100%;
+          padding: 30px; }
+  .grid-index-body main .grid-lista-recetas {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-gap: 3vh 5%;
+    margin-left: 5%;
+    margin-top: 5vh; }
+    .grid-index-body main .grid-lista-recetas .card-body .card-text .bi-star-fill {
+      margin-right: 5px; }
+  .grid-index-body main .newsletter {
+    margin-top: 3vh;
+    padding: 1em;
+    justify-content: center; }
+    .grid-index-body main .newsletter .btn {
+      margin-left: 2em;
+      padding-left: 1em;
+      padding-right: 1em; }
   .grid-index-body .grid-index-footer {
     grid-area: footer; }
+  .grid-index-body footer {
+    margin-top: 2vh; }
+    .grid-index-body footer p {
+      display: block;
+      text-align: center; }
+      .grid-index-body footer p a {
+        text-decoration: none;
+        margin: 0 0.5em; }
 
 header {
   background-color: #FF5C8D; }
@@ -270,6 +332,42 @@ header {
     header .navbar div ul .grid-menu-dropdown li:hover {
       background-color: rgba(255, 92, 141, 0.2); }
 
+main .fondo_receta_destacada .card_receta_destacada {
+  background-color: #FFF;
+  box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37); }
+  main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+    color: #524A4E; }
+  main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
+    color: #B8405E; }
+
+main .grid-lista-recetas .card .card-body .card-title {
+  color: #B8405E; }
+
+main .grid-lista-recetas .card .card-body .btn {
+  background-color: #FFC0D3;
+  border: #FF5C8D solid 1px;
+  color: #524A4E; }
+
+main .newsletter {
+  background-color: #B8405E;
+  /*
+        background-image: url(../imagenes/fondo_cocina_2.png) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/ }
+  main .newsletter h2 {
+    color: #FFF; }
+  main .newsletter .btn {
+    background-color: #FFC0D3;
+    color: #524A4E; }
+
+footer p {
+  color: #524A4E; }
+  footer p a {
+    color: #524A4E; }
+
 header .header__logo h1 {
   font-size: 2em; }
 
@@ -281,6 +379,63 @@ header .navbar {
   header .navbar div ul li ul li {
     font-size: 1em; }
 
+main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+  font-size: 1.5em; }
+
+main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
+  font-size: 2em; }
+
+main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+  font-size: 1.2em; }
+
+main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+  font-size: 1em; }
+
+main .grid-lista-recetas .card .card-body .card-title {
+  font-size: 1.5em; }
+
+main .grid-lista-recetas .card .card-body .btn {
+  font-size: 1.2em; }
+
+main .newsletter h2 {
+  font-size: 1.5em; }
+
+main .newsletter .btn {
+  font-size: 1em; }
+
+footer p {
+  font-size: 1.3em; }
+
+@media (max-width: 1200px) {
+  main .grid-lista-recetas {
+    display: grid !important;
+    grid-template-columns: 30% 30% 30% !important;
+    grid-template-rows: auto !important;
+    grid-gap: 3vh 2.5% !important;
+    margin-left: 5% !important;
+    margin-top: 5vh !important; }
+  main .newsletter h2 {
+    font-size: 1em !important; }
+  footer p {
+    font-size: 1.2em; } }
+
+@media (max-width: 992px) {
+  main .fondo_receta_destacada .card_receta_destacada {
+    display: grid !important;
+    grid-template-columns: 100% !important;
+    grid-template-rows: auto !important;
+    grid-column-gap: 5% !important;
+    width: 70% !important;
+    height: 90% !important;
+    margin: 30px 0 !important;
+    padding-right: 15px; }
+    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+      width: 90% !important; }
+    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      width: 90% !important; }
+  main .newsletter h2 {
+    font-size: 1em !important; } }
+
 @media (min-width: 769px) and (max-width: 992px) {
   header .navbar {
     font-size: 1em; }
@@ -289,7 +444,9 @@ header .navbar {
       margin-left: 0.5em !important; }
       header .navbar div ul li ul li {
         margin-left: 35px !important;
-        font-size: 1em !important; } }
+        font-size: 1em !important; }
+  footer p {
+    font-size: 1em; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
   header .header__search .btn {
@@ -301,7 +458,24 @@ header .navbar {
       margin-left: 0.5em !important; }
       header .navbar div ul li ul li {
         margin-left: 35px !important;
-        font-size: 0.8em !important; } }
+        font-size: 0.8em !important; }
+  main .fondo_receta_destacada .card_receta_destacada {
+    padding-right: 15px; }
+    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+      width: 85% !important; }
+    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      width: 85% !important; }
+  main .grid-lista-recetas {
+    display: grid !important;
+    grid-template-columns: 40% 40% !important;
+    grid-template-rows: auto !important;
+    grid-gap: 3vh 5% !important;
+    margin-left: 12.5% !important;
+    margin-top: 5vh !important; }
+  main .newsletter h2 {
+    width: 50% !important; }
+  footer p {
+    font-size: 0.8em; } }
 
 @media (max-width: 576px) {
   header .header__logo h1 {
@@ -326,7 +500,25 @@ header .navbar {
           flex-direction: column !important; }
           header .navbar div ul li ul div li {
             width: 100px !important;
-            margin: 0 !important; } }
+            margin: 0 !important; }
+  main .fondo_receta_destacada .card_receta_destacada {
+    padding-right: 15px; }
+    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+      width: 85% !important; }
+    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      width: 85% !important; }
+    main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
+      position: relative;
+      left: 7.5px; }
+  main .grid-lista-recetas {
+    display: grid !important;
+    grid-template-columns: 80% !important;
+    grid-template-rows: auto !important;
+    grid-row-gap: 5vh !important;
+    margin-left: 17.5% !important;
+    margin-top: 5vh !important; }
+  main .newsletter h2 {
+    font-size: 0.8em !important; } }
 
 @media (max-width: 530px) {
   header .header__logo {

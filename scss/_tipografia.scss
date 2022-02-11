@@ -26,3 +26,54 @@ header{
         }
     }
 }
+
+main{
+    .fondo_receta_destacada{
+        .card_receta_destacada{
+            .cuerpo_card{
+                .categoria_card{
+                    font-size: 1.5em;
+                }
+                .titulo_card{
+                    font-size: 2em;     
+                }
+                .pre_descripcion{
+                    font-size: 1.2em;
+                }
+                .descripcion{
+                    font-size: 1em;
+                }
+
+            }
+        
+        }
+    }
+
+    .grid-lista-recetas{
+        .card{
+            .card-body{
+                .card-title{
+                    font-size: 1.5em;
+                }
+                .btn{
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .newsletter{
+        h2{
+            font-size: 1.5em;
+        }
+        .btn{
+            font-size: 1em;
+        }
+    }
+}
+
+footer{
+    p{
+        font-size: 1.3em;
+    }
+}
