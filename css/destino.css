@@ -189,6 +189,96 @@ input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
+.grid-index-body .grid-index-header a .header__logo .header__logo__titulo {
+  font-size: 2em; }
+
+.grid-index-body .grid-index-header .navbar {
+  font-size: 1.2em; }
+  .grid-index-body .grid-index-header .navbar div ul li a {
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif; }
+  .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu li {
+    font-size: 1em; }
+
+.grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+  font-size: 1.5em; }
+
+.grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
+  font-size: 2em; }
+
+.grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+  font-size: 1.2em; }
+
+.grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+  font-size: 1em; }
+
+.grid-index-body main .grid-lista-recetas .card .card-body .card-title {
+  font-size: 1.5em; }
+
+.grid-index-body main .grid-lista-recetas .card .card-body .btn {
+  font-size: 1.2em; }
+
+.grid-index-body main .newsletter h2 {
+  font-size: 1.5em; }
+
+.grid-index-body main .newsletter .btn {
+  font-weight: 600;
+  font-size: 1.5em; }
+
+.grid-index-body .grid-index-footer p {
+  font-size: 1.3em; }
+
+.grid-index-body .grid-index-footer div a .bi-facebook, .grid-index-body .grid-index-footer div a .bi-instagram, .grid-index-body .grid-index-footer div a .bi-whatsapp {
+  font-size: 3em; }
+
+/*** POSTRES Y DULCES ***/
+.grid-categoria-body .grid-categoria-main .titulo__principal-postres {
+  font-size: 3em; }
+
+.grid-categoria-body .grid-categoria-main .subtitulo__principal-postres {
+  font-size: 1.5em;
+  line-height: 0; }
+
+.grid-categoria-body .grid-categoria-main .descripcion__principal-postres {
+  font-size: 1.2em; }
+
+.grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
+  font-size: 2.5em;
+  line-height: 1em; }
+
+.grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-predescripcion {
+  font-size: 1.8em; }
+
+.grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
+  font-size: 1.5em; }
+
+.grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiqueta-titulo {
+  font-size: 3em;
+  line-height: 0; }
+
+.grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiquetas-container a {
+  font-size: 1.2em; }
+
+.grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .recetas-populares-titulo {
+  font-size: 2em; }
+
+.grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular a .receta-popular-titulo {
+  font-size: 1.3em; }
+
+.grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiqueta-titulo {
+  font-size: 2em;
+  line-height: 0; }
+
+.grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiquetas-container a {
+  font-size: 1.2em; }
+
+.grid-categoria-body .grid-postres-aside .newsletter h2 {
+  font-size: 1.5em; }
+
+.grid-categoria-body .grid-postres-aside .newsletter .btn {
+  font-weight: 600;
+  font-size: 1.5em; }
+
 .grid-index-body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -198,16 +288,18 @@ input[type="checkbox"], input[type="radio"] {
   .grid-index-body .grid-index-header {
     grid-area: header;
     width: 100vw; }
-    .grid-index-body .grid-index-header .header__logo {
-      display: inline-flex;
-      width: 25%; }
-      .grid-index-body .grid-index-header .header__logo .header__logo__container {
-        min-width: 60px;
-        width: 15%;
-        margin-top: 20px;
-        margin-left: 30px; }
-      .grid-index-body .grid-index-header .header__logo .header__logo__titulo {
-        min-width: 300px; }
+    .grid-index-body .grid-index-header a {
+      text-decoration: none; }
+      .grid-index-body .grid-index-header a .header__logo {
+        display: inline-flex;
+        width: 25%; }
+        .grid-index-body .grid-index-header a .header__logo .header__logo__container {
+          min-width: 60px;
+          width: 15%;
+          margin-top: 20px;
+          margin-left: 30px; }
+        .grid-index-body .grid-index-header a .header__logo .header__logo__titulo {
+          min-width: 300px; }
     .grid-index-body .grid-index-header .header__search {
       width: 72%;
       display: inline-flex;
@@ -246,7 +338,7 @@ input[type="checkbox"], input[type="radio"] {
               width: fit-content; }
   .grid-index-body .grid-index-main {
     grid-area: main; }
-  .grid-index-body main .fondo_receta_destacada {
+  .grid-index-body .grid-index-main .fondo_receta_destacada {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,7 +347,7 @@ input[type="checkbox"], input[type="radio"] {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-    .grid-index-body main .fondo_receta_destacada .card_receta_destacada {
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
       display: grid;
       grid-template-columns: 45% 50%;
       grid-template-rows: auto;
@@ -263,43 +355,44 @@ input[type="checkbox"], input[type="radio"] {
       width: 70%;
       height: 90%;
       margin: 30px 0; }
-      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
         display: inline-block;
         margin-top: 20px;
         margin-left: 20px;
         text-decoration: none; }
-      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
         margin-left: 30px; }
-        .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
           text-decoration: none; }
-      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card p {
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card p {
         width: 100%;
         margin-left: 30px; }
-      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
         text-align: justify; }
-      .grid-index-body main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container {
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container {
         display: flex;
         justify-content: center;
         align-items: center; }
-        .grid-index-body main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
           width: 100%;
           padding: 30px; }
-  .grid-index-body main .grid-lista-recetas {
+  .grid-index-body .grid-index-main .grid-lista-recetas {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: auto;
     grid-gap: 3vh 5%;
     margin-left: 5%;
     margin-top: 5vh; }
-    .grid-index-body main .grid-lista-recetas .card-body .card-text .bi-star-fill {
+    .grid-index-body .grid-index-main .grid-lista-recetas .card-body .card-text .bi-star-fill {
       margin-right: 5px; }
-  .grid-index-body main .newsletter {
+  .grid-index-body .grid-index-main .newsletter {
+    display: flex;
     margin-top: 3vh;
     padding: 1em;
     justify-content: center; }
-    .grid-index-body main .newsletter h2 {
+    .grid-index-body .grid-index-main .newsletter h2 {
       line-height: 1em; }
-    .grid-index-body main .newsletter .btn {
+    .grid-index-body .grid-index-main .newsletter .btn {
       margin-left: 2em;
       padding: 0;
       padding-left: 2em;
@@ -314,244 +407,539 @@ input[type="checkbox"], input[type="radio"] {
       .grid-index-body footer p a {
         text-decoration: none;
         margin: 0 0.5em; }
+    .grid-index-body footer div {
+      margin-bottom: 1em; }
+    .grid-index-body footer .redesSociales, .grid-index-body footer .redesSociales a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .grid-index-body footer .redesSociales a {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 1vw; }
 
-header {
+/*** POSTRES Y DULCES ***/
+.grid-categoria-body {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  grid-template-columns: 65% 30%;
+  grid-column-gap: 5%;
+  grid-template-rows: auto auto auto;
+  overflow-x: hidden; }
+  .grid-categoria-body .grid-categoria-main {
+    margin-left: 10%; }
+    .grid-categoria-body .grid-categoria-main .descripcion__principal-postres {
+      width: 90%;
+      margin: 5vh auto;
+      text-align: justify; }
+    .grid-categoria-body .grid-categoria-main .card {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 38% 55%;
+      grid-template-rows: auto;
+      grid-column-gap: 2%; }
+      .grid-categoria-body .grid-categoria-main .card .card-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; }
+        .grid-categoria-body .grid-categoria-main .card .card-img img {
+          width: 100%; }
+      .grid-categoria-body .grid-categoria-main .card .card-cuerpo a {
+        text-decoration: none; }
+      .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
+        text-align: justify; }
+      .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-etiquetas {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px; }
+        .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-etiquetas a {
+          padding: 5px 10px;
+          text-decoration: none;
+          margin-right: 10px;
+          margin-top: 5px; }
+    .grid-categoria-body .grid-categoria-main .card-etiqueta {
+      width: 100%;
+      border-radius: 10px; }
+      .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiqueta-titulo {
+        margin-left: 5%;
+        padding-top: 5vh; }
+      .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiquetas-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3vh; }
+        .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiquetas-container a {
+          margin-top: 10px;
+          margin-right: 10px;
+          padding: 5px 10px;
+          text-decoration: none; }
+    .grid-categoria-body .grid-categoria-main .card-secundaria {
+      margin-top: 3vh; }
+  .grid-categoria-body .grid-postres-aside {
+    width: 100%; }
+    .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .recetas-populares-titulo {
+        text-align: center; }
+      .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular {
+        margin-top: 1vh;
+        width: 45%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular .receta-popular-img-container a img {
+          min-width: 100px;
+          width: 100%;
+          border-radius: 50%; }
+        .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular a {
+          text-decoration: none; }
+          .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular a .receta-popular-titulo {
+            width: 70%;
+            margin-left: 5px; }
+    .grid-categoria-body .grid-postres-aside .card-etiqueta {
+      width: 90%;
+      border-radius: 10px;
+      margin: auto; }
+      .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiqueta-titulo {
+        margin-left: 5%;
+        padding-top: 5vh; }
+      .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiquetas-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 3vh; }
+        .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiquetas-container a {
+          margin-top: 10px;
+          margin-right: 10px;
+          padding: 5px 10px;
+          text-decoration: none; }
+    .grid-categoria-body .grid-postres-aside .newsletter {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      justify-content: center;
+      border-radius: 10px;
+      margin: 3vh auto; }
+      .grid-categoria-body .grid-postres-aside .newsletter h2 {
+        line-height: 1em;
+        width: 90%;
+        margin: auto;
+        text-align: center; }
+      .grid-categoria-body .grid-postres-aside .newsletter .btn {
+        margin: 1vh auto;
+        width: 90%;
+        padding: 0;
+        padding-left: 2em;
+        padding-right: 2em; }
+    .grid-categoria-body .grid-postres-aside .publicidades-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .grid-categoria-body .grid-postres-aside .publicidades-container .publicidad-img-container {
+        width: 300px;
+        margin-top: 3vh; }
+        .grid-categoria-body .grid-postres-aside .publicidades-container .publicidad-img-container img {
+          width: 100%; }
+
+.grid-index-body .grid-index-header {
   background-color: #FF5C8D; }
-  header .header__search .btn {
+  .grid-index-body .grid-index-header a {
+    color: #000; }
+  .grid-index-body .grid-index-header .header__search .btn {
     background-color: #FFC0D3;
     color: #524A4E;
     border-color: #524A4E; }
-  header .navbar {
+  .grid-index-body .grid-index-header .navbar {
     background-color: #FFC0D3 !important; }
-    header .navbar div ul li {
+    .grid-index-body .grid-index-header .navbar div ul li {
       background-color: transparent;
       transition: all 1s; }
-      header .navbar div ul li a {
+      .grid-index-body .grid-index-header .navbar div ul li a {
         color: #524A4E !important; }
-    header .navbar div ul li:hover {
+    .grid-index-body .grid-index-header .navbar div ul li:hover {
       background-color: #FF5C8D; }
-    header .navbar div ul .grid-menu-dropdown li {
+    .grid-index-body .grid-index-header .navbar div ul .grid-menu-dropdown li {
       transition: all 1s; }
-    header .navbar div ul .grid-menu-dropdown li:hover {
+    .grid-index-body .grid-index-header .navbar div ul .grid-menu-dropdown li:hover {
       background-color: rgba(255, 92, 141, 0.2); }
 
-main .fondo_receta_destacada .card_receta_destacada {
+.grid-index-body main .fondo_receta_destacada .card_receta_destacada {
   background-color: #FFF;
   box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
   -webkit-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37); }
-  main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+  .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
     color: #524A4E; }
-  main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
+  .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
     color: #B8405E; }
 
-main .grid-lista-recetas .card .card-body .card-title {
+.grid-index-body main .grid-lista-recetas .card .card-body .card-title {
   color: #B8405E; }
 
-main .grid-lista-recetas .card .card-body .btn {
+.grid-index-body main .grid-lista-recetas .card .card-body .btn {
   background-color: #FFC0D3;
   border: #FF5C8D solid 1px;
   color: #524A4E;
   transition: all 1s; }
 
-main .grid-lista-recetas .card .card-body .btn:hover {
+.grid-index-body main .grid-lista-recetas .card .card-body .btn:hover {
   background-color: rgba(255, 192, 211, 0.5); }
 
-main .newsletter {
+.grid-index-body main .newsletter {
   background-color: #B8405E; }
-  main .newsletter h2 {
+  .grid-index-body main .newsletter h2 {
     color: #FFF; }
-  main .newsletter .btn {
+  .grid-index-body main .newsletter .btn {
     background-color: #FFC0D3;
     color: #524A4E;
     transition: all 1s; }
-  main .newsletter .btn:hover {
-    background-color: rgba(255, 192, 211, 0.7); }
+  .grid-index-body main .newsletter .btn:hover {
+    background-color: rgba(255, 192, 211, 0.5); }
 
-footer p {
+.grid-index-body footer p {
   color: #524A4E; }
-  footer p a {
+  .grid-index-body footer p a {
     color: #524A4E; }
 
-header .header__logo h1 {
-  font-size: 2em; }
+.grid-index-body footer .redesSociales .btn-facebook {
+  background: #3b5998;
+  color: #FFF; }
 
-header .navbar {
-  font-size: 1.2em; }
-  header .navbar div ul li a {
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif; }
-  header .navbar div ul li ul li {
-    font-size: 1em; }
+.grid-index-body footer .redesSociales .btn-instragram {
+  background: linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  color: #FFF; }
 
-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
-  font-size: 1.5em; }
+.grid-index-body footer .redesSociales .btn-whatsapp {
+  background: #25d366;
+  color: #FFF; }
 
-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
-  font-size: 2em; }
+/*** POSTRES Y DULCES ***/
+.grid-categoria-body .grid-categoria-main .titulo__principal-postres {
+  color: #B8405E; }
 
-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
-  font-size: 1.2em; }
+.grid-categoria-body .grid-categoria-main .subtitulo__principal-postres {
+  color: #777; }
 
-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
-  font-size: 1em; }
+.grid-categoria-body .grid-categoria-main .card-destacada {
+  border: 2px solid #EFB810;
+  box-shadow: 0 0 20px #EFB810; }
 
-main .grid-lista-recetas .card .card-body .card-title {
-  font-size: 1.5em; }
+.grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
+  color: #B8405E; }
 
-main .grid-lista-recetas .card .card-body .btn {
-  font-size: 1.2em; }
+.grid-categoria-body .grid-categoria-main .card .card-cuerpo a {
+  color: #3b5998;
+  background-color: rgba(0, 170, 228, 0.2);
+  border-radius: 5px; }
 
-main .newsletter h2 {
-  font-size: 1.5em; }
+.grid-categoria-body .grid-categoria-main .card-etiqueta {
+  background-color: rgba(201, 201, 201, 0.3); }
+  .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiqueta-titulo {
+    color: #524A4E; }
+  .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiquetas-container a {
+    background-color: #FFF;
+    color: #804000;
+    border: 1px solid #804000;
+    border-radius: 5px;
+    transition: all 1s; }
+  .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiquetas-container a:first-child {
+    margin-left: 0; }
+  .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiquetas-container a:hover {
+    background-color: rgba(128, 64, 0, 0.2); }
 
-main .newsletter .btn {
-  font-weight: 600;
-  font-size: 1.5em; }
+.grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .recetas-populares-titulo {
+  color: #524A4E; }
 
-footer p {
-  font-size: 1.3em; }
+.grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular a .receta-popular-titulo {
+  color: #804000; }
+
+.grid-categoria-body .grid-postres-aside .card-etiqueta {
+  background-color: rgba(201, 201, 201, 0.3); }
+  .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiqueta-titulo {
+    color: #524A4E; }
+  .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiquetas-container a {
+    background-color: #FFF;
+    color: #FF8000;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: all 1s; }
+  .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiquetas-container a:first-child {
+    margin-left: 0; }
+  .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiquetas-container a:hover {
+    background-color: rgba(255, 128, 0, 0.1); }
+
+.grid-categoria-body .grid-postres-aside .newsletter {
+  background-color: #B8405E; }
+  .grid-categoria-body .grid-postres-aside .newsletter h2 {
+    color: #FFF; }
+  .grid-categoria-body .grid-postres-aside .newsletter .btn {
+    background-color: #FFC0D3;
+    color: #524A4E;
+    transition: all 1s; }
+  .grid-categoria-body .grid-postres-aside .newsletter .btn:hover {
+    background-color: rgba(255, 192, 211, 0.5); }
 
 @media (max-width: 1200px) {
-  main .grid-lista-recetas {
-    display: grid !important;
-    grid-template-columns: 30% 30% 30% !important;
-    grid-template-rows: auto !important;
-    grid-gap: 3vh 2.5% !important;
-    margin-left: 5% !important;
-    margin-top: 5vh !important; }
-  main .newsletter h2 {
-    font-size: 1em !important; }
-  footer p {
+  .grid-index-body .grid-index-main .grid-lista-recetas {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-gap: 3vh 2.5%;
+    margin-left: 5%;
+    margin-top: 5vh; }
+  .grid-index-body .grid-index-main .newsletter h2 {
+    font-size: 1em; }
+  .grid-index-body footer p {
+    font-size: 1.2em; }
+  /*** POSTRES DULCES ***/
+  .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
+    font-size: 2em; }
+  .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-predescripcion {
+    font-size: 1.5em; }
+  .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
+    font-size: 1.2em; }
+  .grid-categoria-body .grid-categoria-main .card-etiqueta .card-etiqueta-titulo {
+    font-size: 2em; }
+  .grid-categoria-body .grid-postres-aside .card-etiqueta .card-etiqueta-titulo {
+    font-size: 1.8em; }
+  .grid-categoria-body .grid-postres-aside .newsletter h2 {
+    font-size: 1.2em; }
+  .grid-categoria-body .grid-postres-aside .newsletter .btn {
+    font-weight: 600;
     font-size: 1.2em; } }
 
 @media (max-width: 992px) {
-  main .fondo_receta_destacada .card_receta_destacada {
-    display: grid !important;
-    grid-template-columns: 100% !important;
-    grid-template-rows: auto !important;
-    grid-column-gap: 5% !important;
-    width: 70% !important;
-    height: 90% !important;
-    margin: 30px 0 !important;
+  .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+    width: 70%;
+    height: 90%;
+    margin: 30px 0;
     padding-right: 15px; }
-    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
-      width: 90% !important; }
-    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
-      width: 90% !important; }
-  main .newsletter h2 {
-    font-size: 1em !important; }
-  main .newsletter .btn {
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+      width: 90%; }
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      width: 90%; }
+  .grid-index-body .grid-index-main .newsletter h2 {
+    font-size: 1em; }
+  .grid-index-body .grid-index-main .newsletter .btn {
     margin-right: 1em;
-    padding-left: 1em !important;
-    padding-right: 1em !important; } }
+    padding-left: 1em;
+    padding-right: 1em; }
+  .grid-index-body footer .redesSociales a {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8em; }
+  /*** POSTRES DULCES***/
+  .grid-categoria-body {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header" "main" "aside" "footer";
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(4, auto);
+    overflow-x: hidden; }
+    .grid-categoria-body .grid-categoria-main {
+      margin-left: 10%; }
+    .grid-categoria-body .grid-postres-aside {
+      margin-left: 5%; }
+      .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto; }
+        .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .recetas-populares-titulo {
+          width: 100%; }
+        .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular {
+          display: grid;
+          grid-template-columns: repeat(3, 33%);
+          grid-template-rows: auto; }
+          .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular .receta-popular {
+            width: 33%;
+            margin: auto; }
+      .grid-categoria-body .grid-postres-aside .publicidades-container {
+        flex-direction: row;
+        justify-content: space-evenly; }
+    .grid-categoria-body .grid-categoria-footer {
+      margin-left: 5%; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  header .navbar {
+  .grid-index-body .grid-index-header .navbar {
     font-size: 1em; }
-    header .navbar div ul li {
-      width: 25% !important;
-      margin-left: 0.5em !important; }
-      header .navbar div ul li ul li {
-        margin-left: 35px !important;
-        font-size: 1em !important; }
-  footer p {
+    .grid-index-body .grid-index-header .navbar div ul li {
+      width: 25%;
+      margin-left: 0.5em; }
+      .grid-index-body .grid-index-header .navbar div ul li ul li {
+        margin-left: 35px;
+        font-size: 1em; }
+  .grid-index-body .grid-index-footer p {
     font-size: 1em; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
-  header .header__search .btn {
+  .grid-index-body .grid-index-header .header__search .btn {
     margin-right: 0.5em; }
-  header .navbar {
+  .grid-index-body .grid-index-header .navbar {
     font-size: 0.8em; }
-    header .navbar div ul li {
-      width: 25% !important;
-      margin-left: 0.5em !important; }
-      header .navbar div ul li ul li {
-        margin-left: 35px !important;
-        font-size: 0.8em !important; }
-  main .fondo_receta_destacada .card_receta_destacada {
+    .grid-index-body .grid-index-header .navbar div ul li {
+      width: 25%;
+      margin-left: 0.5em; }
+      .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu .grid-menu-dropdown li {
+        margin-left: 35px;
+        font-size: 0.8em; }
+  .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
     padding-right: 15px; }
-    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
-      width: 85% !important; }
-    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
-      width: 85% !important; }
-  main .grid-lista-recetas {
-    display: grid !important;
-    grid-template-columns: 40% 40% !important;
-    grid-template-rows: auto !important;
-    grid-gap: 3vh 5% !important;
-    margin-left: 12.5% !important;
-    margin-top: 5vh !important; }
-  main .newsletter h2 {
-    width: 50% !important; }
-  footer p {
-    font-size: 0.8em; } }
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+      width: 85%; }
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      width: 85%; }
+  .grid-index-body .grid-index-main .grid-lista-recetas {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    grid-gap: 3vh 5%;
+    margin-left: 12.5%;
+    margin-top: 5vh; }
+  .grid-index-body .grid-index-main .newsletter h2 {
+    width: 50%; }
+  .grid-index-body .grid-index-footer p {
+    font-size: 0.8em; }
+  /*** POSTRES Y DULCES ***/
+  .grid-categoria-body .grid-categoria-main .card {
+    display: flex;
+    flex-direction: column; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
+      margin-left: 5%; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-predescripcion {
+      margin-left: 5%; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
+      margin-left: 5%;
+      width: 90%; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-etiquetas {
+      margin-left: 5%; }
+  .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .grid-categoria-body .grid-postres-aside .publicidades-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 576px) {
-  header .header__logo h1 {
+  .grid-index-body .grid-index-header a .header__logo .header__logo__titulo {
     font-size: 1.5em;
     line-height: 2.2em; }
-  header .header__search .btn {
+  .grid-index-body .grid-index-header .header__search .btn {
     margin-right: 0.5em; }
-  header .navbar div ul {
-    margin-top: 10px !important; }
-    header .navbar div ul li {
-      font-size: 0.8em !important; }
-      header .navbar div ul li a {
-        text-align: start !important;
-        display: block !important;
-        padding: 0 !important; }
-      header .navbar div ul li ul {
-        width: fit-content !important; }
-        header .navbar div ul li ul div {
-          width: fit-content !important;
+  .grid-index-body .grid-index-header .navbar div ul {
+    margin-top: 10px; }
+    .grid-index-body .grid-index-header .navbar div ul li {
+      font-size: 0.8em; }
+      .grid-index-body .grid-index-header .navbar div ul li a {
+        text-align: start;
+        display: block;
+        padding: 0; }
+      .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu {
+        width: fit-content; }
+        .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu #grid-menu-dropdow {
+          width: fit-content;
           padding: 10px;
-          display: flex !important;
-          flex-direction: column !important; }
-          header .navbar div ul li ul div li {
-            width: 100px !important;
-            margin: 0 !important; }
-  main .fondo_receta_destacada .card_receta_destacada {
+          display: flex;
+          flex-direction: column; }
+          .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu #grid-menu-dropdow li {
+            width: 100px;
+            margin: 0; }
+  .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
     padding-right: 15px; }
-    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
-      width: 85% !important; }
-    main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
-      width: 85% !important; }
-    main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
+      width: 85%; }
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+      width: 85%; }
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
       position: relative;
       left: 7.5px; }
-  main .grid-lista-recetas {
-    display: grid !important;
-    grid-template-columns: 80% !important;
-    grid-template-rows: auto !important;
-    grid-row-gap: 5vh !important;
-    margin-left: 17.5% !important;
-    margin-top: 5vh !important; }
-  main .newsletter h2 {
-    font-size: 0.8em !important; } }
+  .grid-index-body .grid-index-main .grid-lista-recetas {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-row-gap: 5vh;
+    margin-left: 17.5%;
+    margin-top: 5vh; }
+  .grid-index-body .grid-index-main .newsletter h2 {
+    font-size: 0.8em; }
+  .grid-index-body .grid-index-footer .redesSociales a, .grid-index-body footer .redesSociales .grid-index-footer a a {
+    width: 40px;
+    height: 40px;
+    font-size: 0.5em; }
+  /*** POSTRES Y DULCES ***/
+  .grid-categoria-body .grid-categoria-main .titulo__principal-postres {
+    font-size: 2em; }
+  .grid-categoria-body .grid-categoria-main .subtitulo__principal-postre {
+    font-size: 1.5em; }
+  .grid-categoria-body .grid-categoria-main .descripcion__principal-postres {
+    font-size: 1.2em; }
+  .grid-categoria-body .grid-categoria-main .card {
+    display: flex;
+    flex-direction: column; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
+      margin-left: 5%;
+      font-size: 2em !important; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-predescripcion {
+      margin-left: 5%;
+      font-size: 1.2em !important; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
+      margin-left: 5%;
+      font-size: 1em !important; }
+    .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-etiquetas {
+      margin-left: 5%; }
+  .grid-categoria-body .grid-categoria-main .card-etiqueta #card-etiqueta-titulo {
+    font-size: 1.5em; }
+  .grid-categoria-body .grid-postres-aside .div__recetasPopulares-container .grid-receta-popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .grid-categoria-body .grid-postres-aside .publicidades-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 530px) {
-  header .header__logo {
-    width: 100% !important;
+  .grid-index-body .grid-index-header a .header__logo {
+    width: 100%;
     justify-content: center;
-    position: relative !important;
-    right: 5px !important; }
-    header .header__logo div {
-      margin-left: 0 !important;
-      width: 50px !important; }
-    header .header__logo h1 {
-      min-width: fit-content !important; }
-  header .header__search {
-    width: 100% !important;
-    justify-content: center !important;
+    position: relative;
+    right: 5px; }
+    .grid-index-body .grid-index-header a .header__logo .header__logo__container {
+      margin-left: 0;
+      width: 50px; }
+    .grid-index-body .grid-index-header a .header__logo .header__logo__titulo {
+      min-width: fit-content; }
+  .grid-index-body .grid-index-header .header__search {
+    width: 100%;
+    justify-content: center;
     margin-bottom: 1em; }
-    header .header__search input:nth-child(1) {
+    .grid-index-body .grid-index-header .header__search input:nth-child(1) {
       display: none; }
-    header .header__search input:nth-child(2) {
-      display: flex !important; }
-    header .header__search input:nth-child(2)::placeholder {
+    .grid-index-body .grid-index-header .header__search input:nth-child(2) {
+      display: flex; }
+    .grid-index-body .grid-index-header .header__search input:nth-child(2)::placeholder {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       font-size: 14px; }
-    header .header__search button {
+    .grid-index-body .grid-index-header .header__search .btn {
       display: none; } }

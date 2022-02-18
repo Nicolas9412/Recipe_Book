@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book - Verduras y hortalizas</title>
+    <meta name="keywords" content="recetas saludable cocinar verduras hortalizas hervir rico">
+    <meta name="description" content="Recetas con verduras para que tus hijos coman mas saludable">
+    <link rel="shortcut icon" href="../imagenes/logo_recipe_book.ico" type="image/x-icon">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../css/mis-estilos.css">
+    <!-- Estilos Scss -->
+    <link rel="stylesheet" href="../css/destino.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="grid-index-body grid-categoria-body">
+    <header class="grid-index-header">
+        <a href="../index.html">
+            <div class="header__logo">
+
+                <div class="header__logo__container">
+                    <img src="../imagenes/logo_recipe_book.png" alt="logo recipe book">
+                </div>
+
+                <h1 class="header__logo__titulo">Recipe Book</h1>
+
+            </div>
+        </a>
+        <form class="header__search form-inline">
+            <input class="form-control mr-2" type="search" placeholder="Buscar receta..." aria-label="Search">
+            <input class="form-control mr-2" type="search" placeholder="Buscar receta...              " aria-label="Search">
+            <button class="btn my-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item dropdown">
+                  <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">Recetas de</a>
+                  <ul class="dropdown-menu">
+                    <div class="grid-menu-dropdown" id="grid-menu-dropdow">
+                      <li><a href="./postres.html">Postres y dulces</a><div><img src="../imagenes/dropdown_menu/dessert.png" alt="Postres y dulces"></div></li>
+                      <li><a href="./arroz.html">Arroz</a><div><img src="../imagenes/dropdown_menu/rice.png" alt="Arroz"></div></li>
+                      <li><a href="./verduras-hortalizas.html">Verduras y hortalizas</a><div><img src="../imagenes/dropdown_menu/vegetable.png" alt="Verduras y hortalizas"></div></li>
+                     <li><a href="./legumbres-guisos.html">Legumbres y guisos</a><div><img src="../imagenes/dropdown_menu/boiling.png" alt="Legumbres y guisos"></div></li>
+                      <li><a href="#">Para ocasiones especiales</a><div><img src="../imagenes/dropdown_menu/champagne-glass.png" alt="Para ocasiones especiales"></div></li>
+                      <li><a href="#">Pescado y mariscos</a><div><img src="../imagenes/dropdown_menu/shrimp.png" alt="Pescado y mariscos"></div></li>
+                      <li><a href="#">Pastas</a><div><img src="../imagenes/dropdown_menu/spaguetti.png" alt="Pastas"></div></li>
+                      <li><a href="#">Pan, masas y rebozados</a><div><img src="../imagenes/dropdown_menu/rolling-pin.png" alt="Pan, masas y rebozados"></div></li>
+                    </div>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recetas de pollo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#">Recetas fáciles y baratas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Aprende a cocinar</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main class="grid-categoria-main">
+        <h2 class="titulo__principal-postres">Recetas de verduras y hortalizas</h2>
+        <h3 class="subtitulo__principal-postres">5 recetas</h3>
+        <hr>
+        <p class="descripcion__principal-postres">Recetas con verduras fáciles y sanas. Con fotos e instrucciones paso a paso para que puedas cocinar a diario platos de verdura variados que hasta los niños comerán encantados. Convierte todas tus verduras y hortalizas en platos de Recipe Book.</p>
+        <div class="card card-destacada">
+            <div class="card-img">
+              <a href="">
+                <img src="../imagenes/verduras_hortalizas/crema_coliflor.png" alt="crema coliflor">
+              </a>
+            </div>
+            <div class="card-cuerpo">
+                <a href="">
+                  <h2 class="card-titulo">
+                      Crema de Coliflor
+                  </h2>
+                </a>
+                <p class="card-predescripcion">
+                    ⭐ 5 | 25 min | 0.8€/pers.
+                </p>
+                <p class="card-descripcion">
+                    Cómo hacer una crema de coliflor ligera y muy sabrosa. Receta fácil y rápida para comer sano y rico.
+                </p>
+                <div class="card-etiquetas">
+                    <a href="">coliflor</a>
+                    <a href="">cocina argentina</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="card-etiqueta">
+            <h2 class="card-etiqueta-titulo" id="card-etiqueta-titulo">
+              Recetas relacionadas
+            </h2>
+            <div class="card-etiquetas-container">
+              <a href="">Setas y champiñones</a>
+              <a href="">Calabacín</a>
+              <a href="">Verduras al horno</a>
+              <a href="">Recetas vegetarianas</a>
+              <a href="">Berenjena</a>
+              <a href="">Brócoli</a>
+              <a href="">Coliflor</a>
+            </div>
+        </div>
+
+        <div class="card card-secundaria">
+          <div class="card-img">
+            <a href="">
+              <img src="../imagenes/verduras_hortalizas/coliflor.png" alt="coliflor">
+            </a>
+          </div>
+          <div class="card-cuerpo">
+              <a href="">
+                <h2 class="card-titulo">
+                    Crema pastelera
+                </h2>
+              </a>
+              <p class="card-predescripcion">
+                ⭐ 5
+              </p>
+              <p class="card-descripcion">
+                Coliflor. Sus beneficios en tu salud, propiedades y usos en la cocina. Comer sano y sabroso en casa.
+              </p>
+              <div class="card-etiquetas">
+                  <a href="">Coliflor</a>
+              </div>
+              
+          </div>
+        </div>
+
+        <div class="card card-secundaria">
+            <div class="card-img">
+              <a href="">
+                <img src="../imagenes/verduras_hortalizas/coliflor_al_horno.png" alt="coliflor al horno">
+              </a>
+            </div>
+            <div class="card-cuerpo">
+                <a href="">
+                  <h2 class="card-titulo">
+                      Coliflor al horno
+                  </h2>
+                </a>
+                <p class="card-predescripcion">
+                    ⭐ 3.7 | 40 min | 0.6€/pers.
+                </p>
+                <p class="card-descripcion">
+                    Cómo hacer coliflor al horno. Receta perfecta para comer verdura en casa, si la preparáis gratinada con un toque de especies volará del plato
+                </p>
+                <div class="card-etiquetas">
+                    <a href="">coliflor</a>
+                    <a href="">cocina argentina</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="card card-secundaria">
+            <div class="card-img">
+              <a href="">
+                <img src="../imagenes/verduras_hortalizas/edamame.png" alt="edamame">
+              </a>
+            </div>
+            <div class="card-cuerpo">
+                <a href="">
+                  <h2 class="card-titulo">
+                      Edamame
+                  </h2>
+                </a>
+                <p class="card-predescripcion">
+                    ⭐ 5
+                </p>
+                <p class="card-descripcion">
+                    Edamame. Un snack asiático ,con multitud de nutrientes y propiedades beneficiosas. ¿Quieres sabes cuáles son?s
+                </p>
+                <div class="card-etiquetas">
+                    <a href="">edamame</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="card card-secundaria">
+          <div class="card-img">
+            <a href="">
+              <img src="../imagenes/verduras_hortalizas/shakshuka.png" alt="shakshuka">
+            </a>
+          </div>
+          <div class="card-cuerpo">
+              <a href="">
+                <h2 class="card-titulo">
+                    Shakshuka
+                </h2>
+              </a>
+              <p class="card-predescripcion">
+                ⭐ 3.9 | 40 min | 1.5€/pers.
+              </p>
+              <p class="card-descripcion">
+                Cómo hacer Shakshuka o huevos fritos con tomate al estilo de Oriente Medio. Receta israelí deliciosa, barata y fácil. Paso a paso con fotos y vídeo.
+              </p>
+              <div class="card-etiquetas">
+                  <a href="">huevo</a>
+                  <a href="">cocina israelí</a>
+              </div>
+              
+          </div>
+
+        </div>
+
+    </main>
+
+    <aside class="grid-postres-aside">
+
+      <div class="div__recetasPopulares-container">
+        <h2 class="recetas-populares-titulo">⭐Recetas populares</h2>
+        <div class="grid-receta-popular">
+          <div class="receta-popular">
+            <div class="receta-popular-img-container">
+              <a href="">
+                <img src="../imagenes/verduras_hortalizas/recetas_populares/tortilla_papas.png" alt="tortilla de papas">
+              </a>
+            </div>
+            <a href="">
+              <h3 class="receta-popular-titulo">Tortilla de papa</h3>
+            </a>
+          </div>
+          <div class="receta-popular">
+            <div class="receta-popular-img-container">
+              <a href="">
+                <img src="../imagenes/verduras_hortalizas/recetas_populares/guacamole.png" alt="guacamole">
+              </a>
+            </div>
+            <a href="">
+              <h3 class="receta-popular-titulo">Guacamole</h3>
+            </a>
+          </div>
+          <div class="receta-popular">
+            <div class="receta-popular-img-container">
+              <a href="">
+                <img src="../imagenes/verduras_hortalizas/recetas_populares/salmorejo.png" alt="salmorejo">
+              </a>
+            </div>
+            <a href="">
+              <h3 class="receta-popular-titulo">Salmorejo</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="card-etiqueta">
+        <h2 class="card-etiqueta-titulo">
+          Hoy se habla de…
+        </h2>
+        <div class="card-etiquetas-container">
+          <a href="">Lentejas con chorizo</a>
+          <a href="">Recetas de bacalao</a>
+          <a href="">Recetas con garbanzos</a>
+          <a href="">Recetas de arroz</a>
+          <a href="">Recetas con pollo</a>
+          <a href="">Cenas saludables</a>
+          <a href="">Cenas rápidas</a>
+          <a href="">Crepes</a>
+          <a href="">Tortitas</a>
+          <a href="">Bizcocho de yogur</a>
+        </div>
+      </div>
+      
+      <div class="newsletter d-flex">
+
+        <h2>Recibe un email semanal con las nuevas recetas y recomendaciones de Recipe Book</h2>
+        <button class="btn" type="submit">Suscribite</button>
+
+      </div>
+
+      <div class="publicidades-container">
+        <div class="publicidad-img-container">
+          <a href="">
+            <img src="http://www.diariocañada.com/images/banners/DonAntonio.gif" alt="San Antonio">
+          </a>
+        </div>
+        <div class="publicidad-img-container">
+          <a href="">
+            <img src="http://www.pasionparrillera.com/wp-content/uploads/2020/03/CarniceriaGourmet300x250.gif" alt="carniceria gourmet">
+          </a>
+        </div>
+      </div>
+
+    </aside>
+
+    <footer class="grid-index-footer grid-categoria-footer">
+        <hr>
+        <p>Versión clásica</p>  
+        <p>Powered by <img src="../imagenes/globant.png" alt="Globant"></p>
+        <div class="redesSociales">
+          <a class="btn-facebook" href=""><i class="bi bi-facebook"></i></a>
+          <a class="btn-instragram" href=""><i class="bi bi-instagram"></i></a>
+          <a class="btn-whatsapp" href=""><i class="bi bi-whatsapp"></i></a>
+        </div> 
+        <p><a href="">Términos de uso </a>|<a href="">Política de privacidad</a>|<a href="">Política de cookies</a></p> 
+        <p>© 2009-2020 Recetas de Recipe Book - Todos los derechos reservados</p> 
+      </footer>
+
+      <!-- Bootstrap js -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+  </body>
+</html>

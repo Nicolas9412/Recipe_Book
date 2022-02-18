@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Book</title>
-    <link rel="shortcut icon" href="./imagenes/logo_recipe_book.ico" type="image/x-icon">
+    <title>Recipe Book - Recetas fáciles y baratas</title>
+    <meta name="keywords" content="recetas cocinar barato facil comida rica">
+    <meta name="description" content="Recipe Book tiene una colección de recetas para ofrecerte. Además cuenta con noticias e investigaciones 
+    sobre los alimentos para llevar una vida sana">
+    <link rel="shortcut icon" href="../imagenes/logo_recipe_book.ico" type="image/x-icon">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Mis estilos css -->
-    <link rel="stylesheet" href="./css/mis-estilos.css">
+    <link rel="stylesheet" href="../css/mis-estilos.css">
     <!-- Estilos Scss -->
-    <link rel="stylesheet" href="./css/destino.css">
+    <link rel="stylesheet" href="../css/destino.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Google Fonts -->
@@ -25,15 +28,17 @@
 </head>
 <body class="grid-index-body">
     <header class="grid-index-header">
-        <div class="header__logo">
+        <a href="./index.html">
+            <div class="header__logo">
 
-            <div class="header__logo__container">
-                <img src="./imagenes/logo_recipe_book.png" alt="logo recipe book">
+                <div class="header__logo__container">
+                    <img src="../imagenes/logo_recipe_book.png" alt="logo recipe book">
+                </div>
+
+                <h1 class="header__logo__titulo">Recipe Book</h1>
+
             </div>
-
-            <h1 class="header__logo__titulo">Recipe Book</h1>
-
-        </div>
+        </a>
 
         <form class="header__search form-inline">
             <input class="form-control mr-2" type="search" placeholder="Buscar receta..." aria-label="Search">
@@ -51,15 +56,15 @@
                 <li class="nav-item dropdown">
                   <a class="btn dropdown-toggle" type="button" data-toggle="dropdown">Recetas de</a>
                   <ul class="dropdown-menu">
-                    <div class="grid-menu-dropdown">
-                      <li><a href="#">Postres y dulces</a><div><img src="./imagenes/dropdown_menu/dessert.png" alt="Postres y dulces"></div></li>
-                      <li><a href="#">Arroz</a><div><img src="./imagenes/dropdown_menu/rice.png" alt="Arroz"></div></li>
-                      <li><a href="#">Verduras y hortalizas</a><div><img src="./imagenes/dropdown_menu/vegetable.png" alt="Verduras y hortalizas"></div></li>
-                      <li><a href="#">Legumbres y guisos</a><div><img src="./imagenes/dropdown_menu/boiling.png" alt="Legumbres y guisos"></div></li>
-                      <li><a href="#">Para ocasiones especiales</a><div><img src="./imagenes/dropdown_menu/champagne-glass.png" alt="Para ocasiones especiales"></div></li>
-                      <li><a href="#">Pescado y mariscos</a><div><img src="./imagenes/dropdown_menu/shrimp.png" alt="Pescado y mariscos"></div></li>
-                      <li><a href="#">Pastas</a><div><img src="./imagenes/dropdown_menu/spaguetti.png" alt="Pastas"></div></li>
-                      <li><a href="#">Pan, masas y rebozados</a><div><img src="./imagenes/dropdown_menu/rolling-pin.png" alt="Pan, masas y rebozados"></div></li>
+                    <div class="grid-menu-dropdown" id="grid-menu-dropdow">
+                      <li><a href="./paginas/postres.html">Postres y dulces</a><div><img src="../imagenes/dropdown_menu/dessert.png" alt="Postres y dulces"></div></li>
+                      <li><a href="./paginas/arroz.html">Arroz</a><div><img src="../imagenes/dropdown_menu/rice.png" alt="Arroz"></div></li>
+                      <li><a href="./paginas/verduras-hortalizas.html">Verduras y hortalizas</a><div><img src="../imagenes/dropdown_menu/vegetable.png" alt="Verduras y hortalizas"></div></li>
+                      <li><a href="./paginas/legumbres-guisos.html">Legumbres y guisos</a><div><img src="../imagenes/dropdown_menu/boiling.png" alt="Legumbres y guisos"></div></li>
+                      <li><a href="#">Para ocasiones especiales</a><div><img src="../imagenes/dropdown_menu/champagne-glass.png" alt="Para ocasiones especiales"></div></li>
+                      <li><a href="#">Pescado y mariscos</a><div><img src="../imagenes/dropdown_menu/shrimp.png" alt="Pescado y mariscos"></div></li>
+                      <li><a href="#">Pastas</a><div><img src="../imagenes/dropdown_menu/spaguetti.png" alt="Pastas"></div></li>
+                      <li><a href="#">Pan, masas y rebozados</a><div><img src="../imagenes/dropdown_menu/rolling-pin.png" alt="Pan, masas y rebozados"></div></li>
                     </div>
                   </ul>
                 </li>
@@ -80,7 +85,7 @@
           <div class="fondo_receta_destacada">
             <div class="card_receta_destacada">
               <div class="cuerpo_card">
-                <a class="categoria_card" href="">Recetas de postres</a>
+                <a class="categoria_card" href="./paginas/recetas-de-postres.html">Recetas de postres</a>
                 <h2 class="titulo_card"><a href="">Tarta de queso y yogur con kiwis</a></h2>
                 <p class="pre_descripcion">5 <i class="bi bi-star-fill"></i> | FÁCIL | 60 MINUTOS | $ 200/PERSONA</p>
                 <p class="descripcion">Cómo preparar una cheesecake o tarta de queso con kiwis. La tarta de queso es uno de esos postres 
@@ -90,15 +95,15 @@
                 </p>
               </div>
               <div class="img_tarta_kiwi_container">
-                <img src="./imagenes/tarta_queso_kiwi.png" alt="">
+                <img src="../imagenes/tarta_queso_kiwi.png" alt="">
               </div>
               
             </div>
           </div>
-          <div class="grid-lista-recetas">
+          <div class="grid-lista-recetas" id="grid-lista-recetas">
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/coliflor.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/coliflor.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Coliflor. Beneficios, propiedades y usos en la cocina. Comer sano y sabroso</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>5</p>
@@ -107,7 +112,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/coliflor-al-horno.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/coliflor-al-horno.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cómo hacer coliflor al horno</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>3.3</p>
@@ -116,7 +121,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/verduras.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/verduras.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Verduras y hortalizas de invierno</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>4</p>
@@ -125,7 +130,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/torta_mouse_frutas.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/torta_mouse_frutas.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cómo hacer tarta mousse de fruta sin horno</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>3.5</p>
@@ -134,7 +139,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/edamame.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/edamame.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Edamame. Propiedades y beneficios de este aperitivo rico, saciante y muy saludable</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>4.5</p>
@@ -143,7 +148,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/quiche_Lorraine.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/quiche_Lorraine.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cómo hacer una Quiche Lorraine paso a paso</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>5</p>
@@ -152,7 +157,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/budin.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/budin.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Budín de yogur con naranja</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>3.8</p>
@@ -161,7 +166,7 @@
             </div>
 
             <div class="card">
-              <img src="./imagenes/lista_recetas/moldes.png" class="card-img-top" alt="...">
+              <img src="../imagenes/lista_recetas/moldes.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Tipos de moldes. Tamaños, material y formas.</h5>
                 <p class="card-text"><i class="bi bi-star-fill"></i>4.5</p>
@@ -178,8 +183,14 @@
           </div>
     </main>
     <footer class="grid-index-footer">
+      <hr>
       <p>Versión clásica</p>  
-      <p>Powered by <img src="./imagenes/globant.png" alt="Globant"></p> 
+      <p>Powered by <img src="../imagenes/globant.png" alt="Globant"></p>
+      <div class="redesSociales">
+        <a class="btn-facebook" href=""><i class="bi bi-facebook"></i></a>
+        <a class="btn-instragram" href=""><i class="bi bi-instagram"></i></a>
+        <a class="btn-whatsapp" href=""><i class="bi bi-whatsapp"></i></a>
+      </div> 
       <p><a href="">Términos de uso </a>|<a href="">Política de privacidad</a>|<a href="">Política de cookies</a></p> 
       <p>© 2009-2020 Recetas de Recipe Book - Todos los derechos reservados</p> 
     </footer>
