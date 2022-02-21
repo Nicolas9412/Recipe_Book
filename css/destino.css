@@ -369,13 +369,20 @@ input[type="checkbox"], input[type="radio"] {
         margin-left: 30px; }
       .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
         text-align: justify; }
-      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container {
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container {
         display: flex;
         justify-content: center;
-        align-items: center; }
-        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img_tarta_kiwi_container img {
+        align-items: center;
+        padding: 30px; }
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container .img_tarta_kiwi_container {
           width: 100%;
-          padding: 30px; }
+          height: fit-content;
+          overflow: hidden; }
+          .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container .img_tarta_kiwi_container img {
+            width: 100%;
+            transition: all 0.5s ease; }
+    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada:hover .img_tarta_kiwi_container img {
+      transform: scale(1.1); }
   .grid-index-body .grid-index-main .grid-lista-recetas {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -383,8 +390,15 @@ input[type="checkbox"], input[type="radio"] {
     grid-gap: 3vh 5%;
     margin-left: 5%;
     margin-top: 5vh; }
-    .grid-index-body .grid-index-main .grid-lista-recetas .card-body .card-text .bi-star-fill {
+    .grid-index-body .grid-index-main .grid-lista-recetas .card .img-container {
+      overflow: hidden; }
+      .grid-index-body .grid-index-main .grid-lista-recetas .card .img-container img {
+        width: 100%;
+        transition: all 0.5s ease; }
+    .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .card-text .bi-star-fill {
       margin-right: 5px; }
+    .grid-index-body .grid-index-main .grid-lista-recetas .card:hover img {
+      transform: scale(1.1); }
   .grid-index-body .grid-index-main .newsletter {
     display: flex;
     margin-top: 3vh;
@@ -419,7 +433,7 @@ input[type="checkbox"], input[type="radio"] {
         border-radius: 50%;
         margin: 0 1vw; }
 
-/*** POSTRES Y DULCES ***/
+/*** CATEGORIAS ***/
 .grid-categoria-body {
   width: 100%;
   display: grid;
@@ -437,17 +451,20 @@ input[type="checkbox"], input[type="radio"] {
     .grid-categoria-body .grid-categoria-main .card {
       width: 100%;
       display: grid;
-      grid-template-columns: 38% 55%;
+      grid-template-columns: 34% 55%;
       grid-template-rows: auto;
       grid-column-gap: 2%; }
-      .grid-categoria-body .grid-categoria-main .card .card-img {
-        width: 100%;
+      .grid-categoria-body .grid-categoria-main .card .img-container {
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding: 20px; }
-        .grid-categoria-body .grid-categoria-main .card .card-img img {
-          width: 100%; }
+        align-items: center; }
+        .grid-categoria-body .grid-categoria-main .card .img-container .card-img {
+          width: 100%;
+          height: fit-content;
+          overflow: hidden; }
+          .grid-categoria-body .grid-categoria-main .card .img-container .card-img img {
+            width: 100%;
+            transition: all 0.5s ease; }
       .grid-categoria-body .grid-categoria-main .card .card-cuerpo a {
         text-decoration: none; }
       .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
@@ -461,6 +478,8 @@ input[type="checkbox"], input[type="radio"] {
           text-decoration: none;
           margin-right: 10px;
           margin-top: 5px; }
+    .grid-categoria-body .grid-categoria-main .card:hover .card-img img {
+      transform: scale(1.2); }
     .grid-categoria-body .grid-categoria-main .card-etiqueta {
       width: 100%;
       border-radius: 10px; }
@@ -558,6 +577,9 @@ input[type="checkbox"], input[type="radio"] {
   background-color: #FF5C8D; }
   .grid-index-body .grid-index-header a {
     color: #000; }
+  .grid-index-body .grid-index-header .header__logo:hover .header__logo__titulo {
+    color: #000;
+    text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 3px #000; }
   .grid-index-body .grid-index-header .header__search .btn {
     background-color: #FFC0D3;
     color: #524A4E;
@@ -578,25 +600,31 @@ input[type="checkbox"], input[type="radio"] {
 
 .grid-index-body main .fondo_receta_destacada .card_receta_destacada {
   background-color: #FFF;
-  box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
-  -webkit-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
-  -moz-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37); }
+  transition: all 0.5s ease; }
   .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
     color: #524A4E; }
   .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
     color: #B8405E; }
 
-.grid-index-body main .grid-lista-recetas .card .card-body .card-title {
-  color: #B8405E; }
+.grid-index-body main .fondo_receta_destacada .card_receta_destacada:hover {
+  box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 0px 42px 17px rgba(0, 0, 0, 0.37); }
 
-.grid-index-body main .grid-lista-recetas .card .card-body .btn {
-  background-color: #FFC0D3;
-  border: #FF5C8D solid 1px;
-  color: #524A4E;
-  transition: all 1s; }
+.grid-index-body main .grid-lista-recetas .card {
+  transition: all 0.5s ease; }
+  .grid-index-body main .grid-lista-recetas .card .card-body .card-title {
+    color: #B8405E; }
+  .grid-index-body main .grid-lista-recetas .card .card-body .btn {
+    background-color: #FFC0D3;
+    border: #FF5C8D solid 1px;
+    color: #524A4E;
+    transition: all 1s; }
+  .grid-index-body main .grid-lista-recetas .card .card-body .btn:hover {
+    background-color: rgba(255, 192, 211, 0.5); }
 
-.grid-index-body main .grid-lista-recetas .card .card-body .btn:hover {
-  background-color: rgba(255, 192, 211, 0.5); }
+.grid-index-body main .grid-lista-recetas .card:hover {
+  box-shadow: 0 0 20px #777; }
 
 .grid-index-body main .newsletter {
   background-color: #B8405E; }
@@ -626,7 +654,7 @@ input[type="checkbox"], input[type="radio"] {
   background: #25d366;
   color: #FFF; }
 
-/*** POSTRES Y DULCES ***/
+/*** CATEGORIAS ***/
 .grid-categoria-body .grid-categoria-main .titulo__principal-postres {
   color: #B8405E; }
 
@@ -635,7 +663,7 @@ input[type="checkbox"], input[type="radio"] {
 
 .grid-categoria-body .grid-categoria-main .card-destacada {
   border: 2px solid #EFB810;
-  box-shadow: 0 0 20px #EFB810; }
+  transition: all 0.5s ease; }
 
 .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
   color: #B8405E; }
@@ -644,6 +672,12 @@ input[type="checkbox"], input[type="radio"] {
   color: #3b5998;
   background-color: rgba(0, 170, 228, 0.2);
   border-radius: 5px; }
+
+.grid-categoria-body .grid-categoria-main .card:hover {
+  box-shadow: 0 0 20px #777; }
+
+.grid-categoria-body .grid-categoria-main .card-destacada:hover {
+  box-shadow: 0 0 20px #EFB810; }
 
 .grid-categoria-body .grid-categoria-main .card-etiqueta {
   background-color: rgba(201, 201, 201, 0.3); }
@@ -704,7 +738,7 @@ input[type="checkbox"], input[type="radio"] {
     font-size: 1em; }
   .grid-index-body footer p {
     font-size: 1.2em; }
-  /*** POSTRES DULCES ***/
+  /*** CATEGORIAS ***/
   .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-titulo {
     font-size: 2em; }
   .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-predescripcion {
@@ -745,7 +779,7 @@ input[type="checkbox"], input[type="radio"] {
     width: 60px;
     height: 60px;
     font-size: 0.8em; }
-  /*** POSTRES DULCES***/
+  /*** CATEGORIAS ***/
   .grid-categoria-body {
     width: 100%;
     display: grid;
@@ -816,7 +850,7 @@ input[type="checkbox"], input[type="radio"] {
     width: 50%; }
   .grid-index-body .grid-index-footer p {
     font-size: 0.8em; }
-  /*** POSTRES Y DULCES ***/
+  /*** CATEGORIAS ***/
   .grid-categoria-body .grid-categoria-main .card {
     display: flex;
     flex-direction: column; }
@@ -885,7 +919,7 @@ input[type="checkbox"], input[type="radio"] {
     width: 40px;
     height: 40px;
     font-size: 0.5em; }
-  /*** POSTRES Y DULCES ***/
+  /*** CATEGORIAS ***/
   .grid-categoria-body .grid-categoria-main .titulo__principal-postres {
     font-size: 2em; }
   .grid-categoria-body .grid-categoria-main .subtitulo__principal-postre {

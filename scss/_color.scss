@@ -8,6 +8,16 @@
             color: map-get($colores, negro);
         }
 
+        .header__logo:hover{
+            .header__logo__titulo{
+                    color: #000;
+                    text-shadow:
+                        0 0 1px #000,
+                        0 0 2px #000,
+                        0 0 3px #000,
+            }
+        }
+
         .header__search{
                 .btn{
                     background-color: map-get($colores, rosa-claro);
@@ -47,9 +57,7 @@
         .fondo_receta_destacada{
             .card_receta_destacada{
                 background-color: map-get($colores, blanco);
-                box-shadow: 0px 0px 42px 17px rgba(0,0,0,0.37);
-                -webkit-box-shadow: 0px 0px 42px 17px rgba(0,0,0,0.37);
-                -moz-box-shadow: 0px 0px 42px 17px rgba(0,0,0,0.37);
+                transition: all 0.5s ease;
                 .cuerpo_card{
                     .categoria_card{
                         color: map-get($colores, gris-oscuro);
@@ -63,9 +71,15 @@
                 }
             
             }
+            .card_receta_destacada:hover{
+                box-shadow: 0px 0px 42px 17px rgba(0,0,0,0.37);
+                -webkit-box-shadow: 0px 0px 42px 17px rgba(0,0,0,0.37);
+                -moz-box-shadow: 0px 0px 42px 17px rgba(0,0,0,0.37);
+            }
         }
         .grid-lista-recetas{
             .card{
+                transition: all 0.5s ease;
                 .card-body{
                     .card-title{
                         color: map-get($colores, bordo);
@@ -80,6 +94,9 @@
                         background-color: map-get($colores, rosa-alfa-2);
                     }
                 }
+            }
+            .card:hover{
+                box-shadow: 0 0 20px map-get($colores, gris-claro );
             }
         }
 
@@ -117,7 +134,7 @@
     }
 }
 
-/*** POSTRES Y DULCES ***/
+/*** CATEGORIAS ***/
 
 .grid-categoria-body{
     .grid-categoria-main{
@@ -129,7 +146,8 @@
         }
         .card-destacada{
             border: 2px solid map-get($colores, dorado );
-            box-shadow: 0 0 20px map-get($colores, dorado );
+            transition: all 0.5s ease;
+            
         }
         .card{
             .card-cuerpo{
@@ -142,6 +160,12 @@
                     border-radius: 5px;
                 }
             }
+        }
+        .card:hover{
+            box-shadow: 0 0 20px map-get($colores, gris-claro );
+        }
+        .card-destacada:hover{
+            box-shadow: 0 0 20px map-get($colores, dorado );
         }
         .card-etiqueta{
 

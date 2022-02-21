@@ -125,14 +125,26 @@
                         text-align: justify;
                     }
                 }
-                
-                .img_tarta_kiwi_container{
+                .img-container{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    img{
+                    padding: 30px;
+                    .img_tarta_kiwi_container{
                         width: 100%;
-                        padding: 30px;
+                        height: fit-content;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                } 
+            }
+            .card_receta_destacada:hover{
+                .img_tarta_kiwi_container{
+                    img{
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -144,11 +156,25 @@
             grid-gap: 3vh 5%;
             margin-left: 5%;
             margin-top:  5vh;
-            .card-body{
-                .card-text{
-                    .bi-star-fill{
-                        margin-right: 5px;
+            .card{
+                .img-container{
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        transition: all 0.5s ease;
                     }
+                }
+                .card-body{
+                    .card-text{
+                        .bi-star-fill{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .card:hover{
+                img{
+                    transform: scale(1.1);
                 }
             }
         }
@@ -200,7 +226,7 @@
     }
 }
 
-/*** POSTRES Y DULCES ***/
+/*** CATEGORIAS ***/
 
 .grid-categoria-body{
     width: 100%;
@@ -223,17 +249,21 @@
         .card{
             width: 100%;
             display: grid;
-            grid-template-columns: 38% 55%;
+            grid-template-columns: 34% 55%;
             grid-template-rows: auto;
             grid-column-gap: 2%;
-            .card-img{
-                width: 100%;
+            .img-container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 20px;
-                img{
+                .card-img{
                     width: 100%;
+                    height: fit-content;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        transition: all 0.5s ease;
+                    }
                 }
             }
             .card-cuerpo{
@@ -255,6 +285,13 @@
                     }
                 }
                 
+            }
+        }
+        .card:hover{
+            .card-img{
+                img{
+                    transform: scale(1.2);
+                }
             }
         }
         .card-etiqueta{
