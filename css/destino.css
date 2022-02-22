@@ -397,6 +397,10 @@ input[type="checkbox"], input[type="radio"] {
         transition: all 0.5s ease; }
     .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .card-text .bi-star-fill {
       margin-right: 5px; }
+    .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .btn {
+      transition: all 0.5s ease; }
+    .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .btn:hover {
+      transform: scale(1.05); }
     .grid-index-body .grid-index-main .grid-lista-recetas .card:hover img {
       transform: scale(1.1); }
   .grid-index-body .grid-index-main .newsletter {
@@ -410,7 +414,10 @@ input[type="checkbox"], input[type="radio"] {
       margin-left: 2em;
       padding: 0;
       padding-left: 2em;
-      padding-right: 2em; }
+      padding-right: 2em;
+      transition: all 0.5s ease; }
+    .grid-index-body .grid-index-main .newsletter .btn:hover {
+      transform: scale(1.05); }
   .grid-index-body .grid-index-footer {
     grid-area: footer; }
   .grid-index-body footer {
@@ -431,7 +438,10 @@ input[type="checkbox"], input[type="radio"] {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        margin: 0 1vw; }
+        margin: 0 1vw;
+        transition: all 0.5s ease; }
+      .grid-index-body footer .redesSociales a:hover {
+        transform: scale(1.1); }
 
 /*** CATEGORIAS ***/
 .grid-categoria-body {
