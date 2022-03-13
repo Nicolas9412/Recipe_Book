@@ -364,7 +364,7 @@
                     a{
                         text-decoration: none;
                         .receta-popular-titulo{
-                            width: 70%;
+                            width: 200px;
                             margin-left: 5px;
                         }
                     }
@@ -435,4 +435,308 @@
         }
     }
 }
+
+/*** Membresia ***/
+
+.grid-membresia-body{
+    .grid-membresia-main{
+        .presentacion-membresia{
+            text-align: center;
+        }
+        .tabla-comparativa{
+            width: 65%;
+            margin: auto;
+            margin-top: 5vh;
+            .table{
+                thead{
+                    tr{
+                        th{
+                            text-align: center;
+                        }
+                    }
+                }
+                tbody{
+                    th{
+                        width: 250px;
+                    }
+                    td{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .flex-membresias-container{
+            width: 95%;
+            margin: auto;
+            margin-top: 5vh;
+            .lbl-tap-menu{
+                width: 600px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                div{
+                    height: 76px * 0.75;
+                }
+                label{
+                    display: inline-block;
+                    padding: 10px 20px;
+                    z-index: 2;
+                    cursor: pointer;
+                }
+            }
+            .tap-conteiner{
+                width: 100%;
+                height: 65vh;
+                position: relative;
+                .marcado{
+                    width: 200px;
+                    height: 76px;
+                    z-index: 1;
+                    position: absolute;
+                    left: 0;
+                    top: -76px;
+                    transition: all 1s ease;
+                }
+                .group-card-membresia{
+                    margin-top: 3vh;
+                    width: 65%;
+                    min-width: 1250px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    line-height: 1.8;
+                    transition: all 0.6s ease;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: scale(0.9);
+                    .card-membresia{
+                        min-width: 400px;
+                        position: relative;
+                        transition: all 1s ease;
+                        h2{
+                            text-align: center;
+                            line-height: 0;
+                        }
+                        span{
+                            display: block;
+                            margin-left: 10%;
+                            margin-top: 10px;
+                        }
+                        ul{
+                            height: 200px;
+                            list-style: none;
+                            margin-top: 6vh;
+                            li{
+                                i{
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                        .btn-aplicar{
+                            width: 100%;
+                           a{
+                                float: right;
+                                margin-right: 20px;
+                                margin-bottom: 20px;
+                                text-decoration: none;
+                                padding: 10px 20px;
+                                transition: all 1s ease;
+                            }
+                            a:hover{
+                                transform: scale(1.05);
+                            } 
+                        }
+                    }
+                    .card-membresia:hover{
+                        transform: scale(1.05);
+                    }
+                }
+                #radio1,#radio2,#radio3{
+                    display: none;
+                }
+                #radio1:checked ~ .tab1,
+                #radio2:checked ~ .tab2,
+                #radio3:checked ~ .tab3{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1);
+                }
+                #radio1:checked ~ .marcado{
+                    visibility: visible;
+                    transform: translate(0px);
+                }
+                #radio2:checked ~ .marcado{
+                    visibility: visible;
+                    transform: translate(183px);
+                }
+                #radio3:checked ~ .marcado{
+                    visibility: visible;
+                    transform: translate(400px);
+                }
+            }
+        }
+    }
+}
+
+/*** TIENDA ***/
+.grid-tienda-body{
+    .grid-tienda-main{
+        .articulos-destacados{
+            .titulo-principal{
+                text-align: center;
+            }
+            .flex-destacados{
+                display: flex;
+                justify-content: center;
+                .card{
+                    position: relative;
+                    margin: 0 2.5%;
+                    transition: all 1s ease;
+                    .card-img{
+                        width: 100%;
+                        overflow: hidden;
+                        img{
+                            transition: all 1s ease;
+                        }
+                    }
+                    .card-text{
+                        display: inline-block;
+                    }
+                    .card-text-viejo{
+                        text-decoration:line-through;
+                    }
+                    .card-text-nuevo{
+                        margin-left: 10px;
+                    }
+                    .card-btn{
+                        .btn{
+                            float: right;
+                            transition: all 1s ease;
+                        }
+                    }
+                    
+                    .etiqueta-oferta{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        padding: 10px 20px;
+                        border-radius: 0px 0px 10px 0px;
+                    }
+                }
+                .card:hover{
+                    transform: scale(1.05);
+                    .card-img{
+                       img{
+                        transform: scale(1.05);
+                        } 
+                    }
+                    .card-btn{
+                        .btn:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+        .articulos-principal{
+            .titulo-catalogo{
+                text-align: center;
+            }
+            .grid-tienda{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                .card{
+                    margin: auto;
+                    transition: all 1s ease;
+                    .card-img{
+                        width: 100%;
+                        overflow: hidden;
+                        img{
+                            transition: all 1s ease;
+                        }
+                    }
+                    .card-btn{
+                        width: 100%;
+                        .btn{
+                            padding: 10px 20px;
+                            float: right;
+                            transition: all 1s ease;
+                        }
+                    }
+                }
+                .card:hover{
+                    transform: scale(1.05);
+                    .card-img{
+                        img{
+                            transform: scale(1.05);
+                        }
+                    }
+                    .card-btn{
+                        .btn:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** SOBRE MI ***/
+
+.grid-sobremi-body{
+    .grid-sobremi-main{
+        .presentacion{
+            .titulo-principal{
+                text-align: center;
+            }
+            .body-presentacion{
+                text-align: justify;
+                border-radius: 10px;
+                width: 80%;
+                margin:auto;
+                overflow: hidden;
+                img{
+                    float: right;
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+                .text-presentacion{
+                    padding: 20px;
+                    border-radius: 10px;
+                } 
+            }          
+        }
+        .creaciones{
+            .title-creaciones{
+                text-align: center;
+            }
+            .flex-creaciones{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img-creaciones{
+                    display: inline-block;
+                    margin: 0 10px;
+                    overflow: hidden;
+                    border-radius: 25%;
+                    img{
+                        width: 100%;
+                        transition: all 1s ease;
+                    }     
+                }
+                .img-creaciones:hover{
+                    img{
+                        transform: scale(1.05);
+                    }
+                }  
+            }
+        }
+
+    }
+}
+
 

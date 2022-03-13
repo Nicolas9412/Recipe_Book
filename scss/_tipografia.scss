@@ -178,3 +178,148 @@ $item-menu: 1.2em;
         }
     }
 }
+.grid-membresia-body{
+    .grid-membresia-main{
+        .presentacion-membresia{
+            margin-top: 5vh;
+            .instancia ,.descripcion{
+                font-size: 1.8em;
+            }
+            .titulo-principal{
+                font-weight: 900;
+                font-size: 3em;
+            }
+        }
+        .tabla-comparativa{
+            .table{
+                thead{
+                    tr{
+                        th{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        th{
+                            font-size: 1.2em;
+                        }
+                        td{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+        .flex-membresias-container{
+            .lbl-tap-menu{
+                label, div{
+                    font-weight: 900;
+                    font-size: 2em;
+                }
+            }
+            .tap-conteiner{
+                .group-card-membresia{
+                    .card-membresia{
+                        h2{
+                            font-weight: 700;
+                            font-size: 3em;
+                        }
+                        span{
+                            font-weight: 900;
+                            font-size: 2.5em;
+                        }
+                        ul{
+                            font-size: 1.5em;
+                            li{
+                                .bi-plus{
+                                    font-size: 1.5em;
+                                    line-height: 0;
+                                }
+                            }
+                        }
+                        a{
+                            font-weight: 800;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** TIENDA ***/
+
+.grid-tienda-body{
+    .grid-tienda-main{
+        .articulos-destacados{
+            .titulo-principal{
+                font-size: 4em;
+            }
+            .flex-destacados{
+                .card{
+                    .card-title{
+                        font-size: 1.8em;
+                    }
+                    .card-text{
+                        font-size: 1.5em;
+                        font-weight: 500;
+                    }
+                    .card-btn{
+                        .btn{
+                            font-size: 1.2em;
+                        }
+                    }
+                    .etiqueta-oferta{
+                        font-size: 1.2em;
+                        font-weight: 600;
+                    }
+                }
+            }  
+        }
+        .articulos-principal{
+            .titulo-catalogo{
+                font-size: 4em;
+            }
+            .grid-tienda{
+                .card{
+                    .card-body{
+                        .card-title{
+                            font-size: 1.8em;
+                        }
+                        .card-text{
+                            font-size: 1.5em;
+                            font-weight: 500;
+                        }
+                        .card-btn{
+                            .btn{
+                                 font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** SOBRE MI ***/
+
+.grid-sobremi-body{
+    .grid-sobremi-main{
+        .presentacion{
+            .titulo-principal{
+                font-size: 4em;
+            }
+            .body-presentacion{
+                .text-presentacion{
+                   font-size: 2em; 
+                }
+            }
+        }
+        .creaciones{
+            font-size: 2.5em;
+        }
+    }
+}

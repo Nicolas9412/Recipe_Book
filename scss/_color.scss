@@ -248,3 +248,132 @@
         }
     }
 }
+
+/*** Membresia ***/
+
+.grid-membresia-body{
+    .grid-membresia-main{
+        .tabla-comparativa{
+            .table{
+                tbody{
+                    td{
+                        .bi-x-circle-fill{
+                            color: map-get($colores, bordo );
+                        }
+                        .bi-check-circle-fill{
+                            color: map-get($colores, verde );
+                        }
+                    }
+                }
+            }
+        }
+        .flex-membresias-container{
+            .lbl-tap-menu{
+                border-radius: 10px;
+                color: map-get($colores, blanco);
+                background-color: map-get($colores, verde );
+            }
+            .tap-conteiner{
+                .marcado{
+                    background-color: map-get($colores, rosa-fuerte );
+                    border-radius: 10px;
+                }
+                .group-card-membresia{
+                    .card-membresia{
+                        border: solid 10px transparent;
+                        border-image: -webkit-gradient(
+                            linear,
+                            right top,
+                            left top,
+                            from(map-get($colores, verde)),
+                            to(map-get($colores, rosa-fuerte))
+                        );
+                        border-image: linear-gradient(right,map-get($colores,verde), map-get($colores,rosa-fuerte));
+                        border-image-slice: 1;
+                        h2{
+                            text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+                        }
+                        span{
+                            text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+                        }
+                        ul{
+                            li{
+                                .bi-plus{
+                                    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+                                }
+                            }
+                        }
+                        a{
+                            background-color: map-get($colores, verde );
+                            color: map-get($colores, blanco );
+                            border-radius: 5px;
+                            box-shadow: 0px 1px 48px 17px rgba(45,130,79,0.45);
+                            -webkit-box-shadow: 0px 1px 48px 17px rgba(45,130,79,0.45);
+                            -moz-box-shadow: 0px 1px 48px 17px rgba(45,130,79,0.45);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*** TIENDA ***/
+
+.grid-tienda-body{
+    .grid-tienda-main{
+        .articulos-destacados{
+            .card{
+                .card-btn{
+                    .btn{
+                        background-color: map-get($colores, rosa-fuerte );
+                        color: map-get($colores, blanco );
+                    }
+                    .btn:hover{
+                        background-color: map-get($colores, bordo );
+                    }
+                }   
+            }
+            .card:hover{
+                border: solid 1px map-get($colores, negro )
+            }
+            .etiqueta-oferta{
+                background-color: map-get($colores, verde );
+                color: map-get($colores, blanco )
+            }
+        }
+        .articulos-principal{
+            .grid-tienda{
+                .card{
+                    .card-body{
+                        .card-text{
+                            text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+                        }
+                        .card-btn{
+                            .btn{
+                                background-color: map-get($colores, rosa-fuerte );
+                                color: map-get($colores, blanco )
+                            }
+                            .btn:hover{
+                                background-color: map-get($colores, bordo );
+                            }
+                        }
+                    }
+                }
+                .card:hover{
+                    border: solid 1px map-get($colores, negro )
+                }
+            }
+        }
+    }
+}
+
+.grid-sobremi-body{
+    .grid-sobremi-main{
+        .presentacion{
+            .body-presentacion{
+                background-color: map-get($colores, rosa-claro );
+            }
+        }
+    }
+}
