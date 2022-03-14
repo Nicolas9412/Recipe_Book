@@ -451,7 +451,7 @@ input[type="checkbox"], input[type="radio"] {
         bottom: 0;
         right: 0;
         margin-right: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -1544,7 +1544,8 @@ input[type="checkbox"], input[type="radio"] {
             margin: 0; }
   .grid-index-body .grid-index-main .marco .btn-inicio-sesion {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    margin-bottom: 150px; }
     .grid-index-body .grid-index-main .marco .btn-inicio-sesion .bi-person-circle {
       font-size: 2em; }
   .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
