@@ -201,6 +201,9 @@ input[type="checkbox"], input[type="radio"] {
   .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu li {
     font-size: 1em; }
 
+.grid-index-body main .marco .btn-inicio-sesion .bi-person-circle {
+  font-size: 4em; }
+
 .grid-index-body main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
   font-size: 1.5em; }
 
@@ -360,12 +363,29 @@ input[type="checkbox"], input[type="radio"] {
 .grid-sobremi-body .grid-sobremi-main .creaciones {
   font-size: 2.5em; }
 
+/*** INICIO DE SESION ***/
+.grid-inicio-sesion-body .grid-inicio-sesion-main .div-nombre-usuario .lbl-nombre-usuario {
+  font-size: 1.2em;
+  font-weight: 500; }
+
+.grid-inicio-sesion-body .grid-inicio-sesion-main .div-contraseña .lbl-contraseña {
+  font-size: 1.2em;
+  font-weight: 500; }
+
+.grid-inicio-sesion-body .grid-inicio-sesion-main .div-contraseña .olvido-contraseña {
+  font-size: 1.2em; }
+
+.grid-inicio-sesion-body .grid-inicio-sesion-main .div-inicio .btn-iniciar {
+  font-size: 1.5em;
+  font-weight: 800; }
+
 .grid-index-body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 100vw;
   grid-template-rows: auto auto auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
   .grid-index-body .grid-index-header {
     grid-area: header;
     width: 100vw; }
@@ -419,86 +439,109 @@ input[type="checkbox"], input[type="radio"] {
               width: fit-content; }
   .grid-index-body .grid-index-main {
     grid-area: main; }
-  .grid-index-body .grid-index-main .fondo_receta_destacada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-image: url(../imagenes/fondo_cocina.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
-      display: grid;
-      grid-template-columns: 45% 50%;
-      grid-template-rows: auto;
-      grid-column-gap: 5%;
-      width: 70%;
-      height: 90%;
-      margin: 30px 0; }
-      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
-        display: inline-block;
-        margin-top: 20px;
-        margin-left: 20px;
-        text-decoration: none; }
-      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
-        margin-left: 30px; }
-        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
-          text-decoration: none; }
-      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card p {
-        width: 100%;
-        margin-left: 30px; }
-      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
-        text-align: justify; }
-      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container {
+  .grid-index-body .grid-index-main {
+    position: relative; }
+    .grid-index-body .grid-index-main .marco {
+      width: 100%;
+      height: 80vh;
+      position: absolute; }
+      .grid-index-body .grid-index-main .marco .btn-inicio-sesion {
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px; }
-        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container .img_tarta_kiwi_container {
+        transition: all 1s ease; }
+      .grid-index-body .grid-index-main .marco .btn-inicio-sesion:hover {
+        transform: scale(1.05); }
+    .grid-index-body .grid-index-main .fondo_receta_destacada {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-image: url(../imagenes/fondo-cocina.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
+        z-index: 0;
+        display: grid;
+        grid-template-columns: 45% 50%;
+        grid-template-rows: auto;
+        grid-column-gap: 5%;
+        width: 70%;
+        height: 90%;
+        margin: 30px 0; }
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .categoria_card {
+          display: inline-block;
+          margin-top: 20px;
+          margin-left: 20px;
+          text-decoration: none; }
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card {
+          margin-left: 30px; }
+          .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .titulo_card a {
+            text-decoration: none; }
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card p {
           width: 100%;
-          height: fit-content;
-          overflow: hidden; }
-          .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container .img_tarta_kiwi_container img {
+          margin-left: 30px; }
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
+          text-align: justify; }
+        .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px; }
+          .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container .img_tarta_kiwi_container {
             width: 100%;
-            transition: all 0.5s ease; }
-    .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada:hover .img_tarta_kiwi_container img {
-      transform: scale(1.1); }
-  .grid-index-body .grid-index-main .grid-lista-recetas {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: auto;
-    grid-gap: 3vh 5%;
-    margin-left: 5%;
-    margin-top: 5vh; }
-    .grid-index-body .grid-index-main .grid-lista-recetas .card .img-container {
-      overflow: hidden; }
-      .grid-index-body .grid-index-main .grid-lista-recetas .card .img-container img {
-        width: 100%;
+            height: fit-content;
+            overflow: hidden; }
+            .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .img-container .img_tarta_kiwi_container img {
+              width: 100%;
+              transition: all 0.5s ease; }
+      .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada:hover .img_tarta_kiwi_container img {
+        transform: scale(1.1); }
+    .grid-index-body .grid-index-main .grid-lista-recetas {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-template-rows: auto;
+      grid-gap: 3vh 5%;
+      margin-left: 5%;
+      margin-top: 5vh; }
+      .grid-index-body .grid-index-main .grid-lista-recetas .card .img-container {
+        overflow: hidden; }
+        .grid-index-body .grid-index-main .grid-lista-recetas .card .img-container img {
+          width: 100%;
+          transition: all 0.5s ease; }
+      .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .card-text .bi-star-fill {
+        margin-right: 5px; }
+      .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .btn {
         transition: all 0.5s ease; }
-    .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .card-text .bi-star-fill {
-      margin-right: 5px; }
-    .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .btn {
-      transition: all 0.5s ease; }
-    .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .btn:hover {
-      transform: scale(1.05); }
-    .grid-index-body .grid-index-main .grid-lista-recetas .card:hover img {
-      transform: scale(1.1); }
-  .grid-index-body .grid-index-main .newsletter {
-    display: flex;
-    margin-top: 3vh;
-    padding: 1em;
-    justify-content: center; }
-    .grid-index-body .grid-index-main .newsletter h2 {
-      line-height: 1em; }
-    .grid-index-body .grid-index-main .newsletter .btn {
-      margin-left: 2em;
-      padding: 0;
-      padding-left: 2em;
-      padding-right: 2em;
-      transition: all 0.5s ease; }
-    .grid-index-body .grid-index-main .newsletter .btn:hover {
-      transform: scale(1.05); }
+      .grid-index-body .grid-index-main .grid-lista-recetas .card .card-body .btn:hover {
+        transform: scale(1.05); }
+      .grid-index-body .grid-index-main .grid-lista-recetas .card:hover img {
+        transform: scale(1.1); }
+    .grid-index-body .grid-index-main .newsletter {
+      display: flex;
+      margin-top: 3vh;
+      padding: 1em;
+      justify-content: center; }
+      .grid-index-body .grid-index-main .newsletter h2 {
+        line-height: 1em; }
+      .grid-index-body .grid-index-main .newsletter .btn {
+        margin-left: 2em;
+        padding: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+        transition: all 0.5s ease; }
+      .grid-index-body .grid-index-main .newsletter .btn:hover {
+        transform: scale(1.05); }
   .grid-index-body .grid-index-footer {
     grid-area: footer; }
   .grid-index-body footer {
@@ -664,7 +707,7 @@ input[type="checkbox"], input[type="radio"] {
         .grid-categoria-body .grid-postres-aside .publicidades-container .publicidad-img-container img {
           width: 100%; }
 
-/*** Membresia ***/
+/*** MEMBRESIAS ***/
 .grid-membresia-body .grid-membresia-main .presentacion-membresia {
   text-align: center; }
 
@@ -770,6 +813,7 @@ input[type="checkbox"], input[type="radio"] {
 
 /*** TIENDA ***/
 .grid-tienda-body .grid-tienda-main .articulos-destacados .titulo-principal {
+  width: 100%;
   text-align: center; }
 
 .grid-tienda-body .grid-tienda-main .articulos-destacados .flex-destacados {
@@ -871,6 +915,37 @@ input[type="checkbox"], input[type="radio"] {
   .grid-sobremi-body .grid-sobremi-main .creaciones .flex-creaciones .img-creaciones:hover img {
     transform: scale(1.05); }
 
+/*** INICIO SESION ***/
+.grid-inicio-sesion-body .grid-inicio-sesion-main {
+  width: 100%; }
+  .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion {
+    min-width: 350px;
+    width: 25%;
+    margin: auto;
+    padding: 20px; }
+    .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-nombre-usuario .input-nombre-usuario {
+      transition: all 1s ease; }
+    .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-nombre-usuario .input-nombre-usuario:focus {
+      transform: scale(1.03); }
+    .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-contraseña .input-contraseña {
+      transition: all 1s ease; }
+    .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-contraseña .input-contraseña:focus {
+      transform: scale(1.03); }
+    .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-contraseña .olvido-contraseña {
+      text-decoration: none; }
+    .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-inicio {
+      width: 100%; }
+      .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-inicio .btn-iniciar {
+        margin-top: 15px;
+        padding: 10px 20px;
+        float: right;
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+        transition: all 1s ease; }
+      .grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-inicio .btn-iniciar:hover {
+        transform: scale(1.05); }
+
 .grid-index-body .grid-index-header {
   background-color: #FF5C8D; }
   .grid-index-body .grid-index-header a {
@@ -895,6 +970,11 @@ input[type="checkbox"], input[type="radio"] {
       transition: all 1s; }
     .grid-index-body .grid-index-header .navbar div ul .grid-menu-dropdown li:hover {
       background-color: rgba(255, 92, 141, 0.2); }
+
+.grid-index-body main .marco .btn-inicio-sesion {
+  background-color: #2d824f; }
+  .grid-index-body main .marco .btn-inicio-sesion .bi-person-circle {
+    color: #FFF; }
 
 .grid-index-body main .fondo_receta_destacada .card_receta_destacada {
   background-color: #FFF;
@@ -1087,8 +1167,17 @@ input[type="checkbox"], input[type="radio"] {
 .grid-tienda-body .grid-tienda-main .articulos-principal .grid-tienda .card:hover {
   border: solid 1px #000; }
 
+/*** SOBRE MI ***/
 .grid-sobremi-body .grid-sobremi-main .presentacion .body-presentacion {
   background-color: #FFC0D3; }
+
+/*** INICIO SESION ***/
+.grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-contraseña .olvido-contraseña {
+  color: #000; }
+
+.grid-inicio-sesion-body .grid-inicio-sesion-main .form-inicio-sesion .div-inicio .btn-iniciar {
+  background-color: #2d824f;
+  color: #FFF; }
 
 @media (min-width: 1200px) {
   /*** TIENDA ***/
@@ -1119,7 +1208,7 @@ input[type="checkbox"], input[type="radio"] {
     margin-left: 5%;
     margin-top: 5vh; }
   .grid-index-body .grid-index-main .newsletter h2 {
-    font-size: 1em; }
+    font-size: 1.2em; }
   .grid-index-body footer p {
     font-size: 1.2em; }
   /*** CATEGORIAS ***/
@@ -1187,11 +1276,15 @@ input[type="checkbox"], input[type="radio"] {
     .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .descripcion {
       width: 90%; }
   .grid-index-body .grid-index-main .newsletter h2 {
-    font-size: 1em; }
+    width: 50%;
+    font-size: 1.2em; }
   .grid-index-body .grid-index-main .newsletter .btn {
     margin-right: 1em;
     padding-left: 1em;
     padding-right: 1em; }
+    .grid-index-body .grid-index-main .newsletter .btn .btn {
+      width: 150px;
+      height: 40px; }
   .grid-index-body footer .redesSociales a {
     width: 60px;
     height: 60px;
@@ -1317,7 +1410,12 @@ input[type="checkbox"], input[type="radio"] {
     margin-left: 12.5%;
     margin-top: 5vh; }
   .grid-index-body .grid-index-main .newsletter h2 {
-    width: 50%; }
+    width: 60%; }
+  .grid-index-body .grid-index-main .newsletter .btn {
+    position: relative;
+    top: 15px;
+    width: 150px;
+    height: 50px; }
   .grid-index-body .grid-index-footer p {
     font-size: 1.2em; }
   /*** CATEGORIAS ***/
@@ -1444,6 +1542,11 @@ input[type="checkbox"], input[type="radio"] {
           .grid-index-body .grid-index-header .navbar div ul li .dropdown-menu #grid-menu-dropdow li {
             width: 100px;
             margin: 0; }
+  .grid-index-body .grid-index-main .marco .btn-inicio-sesion {
+    width: 50px;
+    height: 50px; }
+    .grid-index-body .grid-index-main .marco .btn-inicio-sesion .bi-person-circle {
+      font-size: 2em; }
   .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada {
     padding-right: 15px; }
     .grid-index-body .grid-index-main .fondo_receta_destacada .card_receta_destacada .cuerpo_card .pre_descripcion {
@@ -1462,6 +1565,9 @@ input[type="checkbox"], input[type="radio"] {
     margin-top: 5vh; }
   .grid-index-body .grid-index-main .newsletter h2 {
     font-size: 0.8em; }
+  .grid-index-body .grid-index-main .newsletter .btn {
+    width: 150px;
+    height: 50px; }
   .grid-index-body .grid-index-footer .redesSociales a, .grid-index-body footer .redesSociales .grid-index-footer a a {
     width: 40px;
     height: 40px;
@@ -1483,6 +1589,7 @@ input[type="checkbox"], input[type="radio"] {
       margin-left: 5%;
       font-size: 1.2em !important; }
     .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-descripcion {
+      padding-right: 10px;
       margin-left: 5%;
       font-size: 1em !important; }
     .grid-categoria-body .grid-categoria-main .card .card-cuerpo .card-etiquetas {
@@ -1557,7 +1664,7 @@ input[type="checkbox"], input[type="radio"] {
       .grid-tienda-body .grid-tienda-main .articulos-destacados .flex-destacados .card .card-body .card-text {
         font-size: 1em; }
   .grid-tienda-body .grid-tienda-main .articulos-principal .titulo-catalogo {
-    font-size: 2em; }
+    font-size: 1.8em; }
   .grid-tienda-body .grid-tienda-main .articulos-principal .titulo-catalogo::after {
     content: '─────'; }
   .grid-tienda-body .grid-tienda-main .articulos-principal .titulo-catalogo::before {

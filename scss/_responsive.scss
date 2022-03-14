@@ -58,7 +58,7 @@
             }
             .newsletter{
                 h2{
-                    font-size: 1em;
+                    font-size: 1.2em;
                 }
             }
         }
@@ -210,12 +210,16 @@
             }
             .newsletter{
                 h2{
-                    font-size: 1em;
+                    width: 50%;
+                    font-size: 1.2em;
                 }
                 .btn{
                     margin-right: 1em;
                     padding-left: 1em;
                     padding-right: 1em;
+                    .btn{
+                        @include sizes(150px, 40px);
+                    }
                 }
             }
         }
@@ -461,7 +465,12 @@
             }
             .newsletter{
                 h2{
-                    width: 50%;
+                    width: 60%;
+                }
+                .btn{
+                    position: relative;
+                    top: 15px;
+                    @include sizes(150px, 50px);
                 }
             }
         }
@@ -701,6 +710,15 @@
         }
 
         .grid-index-main{
+            .marco{
+                .btn-inicio-sesion{
+                    width: 50px;
+                    height: 50px;
+                    .bi-person-circle{
+                        font-size: 2em;
+                    }
+                }
+            }
             .fondo_receta_destacada{
                 .card_receta_destacada{
                     padding-right: 15px;
@@ -731,6 +749,9 @@
             .newsletter{
                 h2{
                     font-size: 0.8em;
+                }
+                .btn{
+                    @include sizes(150px, 50px);
                 }
             }
         }
@@ -765,11 +786,12 @@
                         font-size: 2em !important;
                     }
                     .card-predescripcion{
-                            margin-left: 5%;
+                        margin-left: 5%;
                         font-size: 1.2em !important;
                     }
                     .card-descripcion{
-                            margin-left: 5%;    
+                        padding-right: 10px;
+                        margin-left: 5%;    
                         font-size: 1em !important;
                     }
                     .card-etiquetas{
@@ -898,7 +920,7 @@
             }
             .articulos-principal{
                 .titulo-catalogo{
-                    font-size: 2em;
+                    font-size: 1.8em;
                 }
                 .titulo-catalogo::after{
                     content:'─────';

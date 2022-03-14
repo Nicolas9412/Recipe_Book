@@ -31,6 +31,14 @@ $item-menu: 1.2em;
     }
 
     main{
+        .marco{
+            .btn-inicio-sesion{
+                .bi-person-circle{
+                    font-size: 4em;
+                }
+                
+            }
+        }
         .fondo_receta_destacada{
             .card_receta_destacada{
                 .cuerpo_card{
@@ -320,6 +328,34 @@ $item-menu: 1.2em;
         }
         .creaciones{
             font-size: 2.5em;
+        }
+    }
+}
+
+/*** INICIO DE SESION ***/
+
+.grid-inicio-sesion-body{
+    .grid-inicio-sesion-main{
+        .div-nombre-usuario{
+            .lbl-nombre-usuario{
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+        }
+        .div-contraseña{
+            .lbl-contraseña{
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+            .olvido-contraseña{
+                font-size: 1.2em;
+            }
+        }
+        .div-inicio{
+            .btn-iniciar{
+                font-size: 1.5em;
+                font-weight: 800;
+            }
         }
     }
 }

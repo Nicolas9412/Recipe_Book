@@ -54,6 +54,14 @@
     }
 
     main{
+        .marco{
+            .btn-inicio-sesion{
+                background-color: map-get($colores, verde );
+                .bi-person-circle{
+                    color: map-get($colores, blanco )
+                }
+            }
+        }
         .fondo_receta_destacada{
             .card_receta_destacada{
                 background-color: map-get($colores, blanco);
@@ -368,11 +376,33 @@
     }
 }
 
+/*** SOBRE MI ***/
+
 .grid-sobremi-body{
     .grid-sobremi-main{
         .presentacion{
             .body-presentacion{
                 background-color: map-get($colores, rosa-claro );
+            }
+        }
+    }
+}
+
+/*** INICIO SESION ***/
+
+.grid-inicio-sesion-body{
+    .grid-inicio-sesion-main{
+        .form-inicio-sesion{
+            .div-contraseña{
+                .olvido-contraseña{
+                    color: map-get($colores, negro );
+                }
+            }
+            .div-inicio{
+                .btn-iniciar{
+                    background-color: map-get($colores, verde );
+                    color: map-get($colores, blanco );
+                }  
             }
         }
     }
